@@ -19,7 +19,7 @@ body {
 main {
     margin: auto;
     margin-top: 50px;
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
     width: 350px;
     border-radius: 8px;
 
@@ -54,7 +54,7 @@ h2, h3{
 }
 
 div {
-    margin: 0 auto;
+    margin: 10px auto 10px auto;
     width: 300px;
     color: white;
 }
@@ -98,5 +98,28 @@ div {
 }
 
 li {
+    text-align: start;
     margin-left: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 65%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;  
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linux {
+        font-size: 1.5em;
+    }
+
+    div {
+        width: 450px;
+    }
 }
