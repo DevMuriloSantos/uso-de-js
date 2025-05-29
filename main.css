@@ -1,9 +1,9 @@
 :root {
-    --cor1: #DF3079;
-    --cor2: #F22C3D;
-    --cor3: #3f9850;
-    --cor4: #2874A2;
-    --cor5: #787878;
+    --corRosa: #DF3079;
+    --corVermelho: #F22C3D;
+    --corVerde: #3f9850;
+    --corAzul: #2874A2;
+    --corCinza: #787878;
 }
 
 * {
@@ -38,7 +38,7 @@ h2, h3{
     padding: 5px;
 }
 
-.linux, .cor1, .cor2, .cor3 {
+.linux, .corRosa, .corVermelho, .corVerde {
     font-family: linux-libertine, "Courier New", Courier, monospace;
 }
 
@@ -77,24 +77,24 @@ div {
     border-bottom-right-radius: 6px;
 }
 
-.cor1 {
-    color: var(--cor1);
+.corRosa {
+    color: var(--corRosa);
 }
 
-.cor2 {
-    color: var(--cor2);
+.corVermelho {
+    color: var(--corVermelho);
 }
 
-.cor3 {
-    color: var(--cor3);
+.corVerde {
+    color: var(--corVerde);
 }
 
-.cor4 {
-    color: var(--cor4)
+.corAzul {
+    color: var(--corAzul)
 }
 
-.cor5 {
-    color: var(--cor5);
+.corCinza {
+    color: var(--corCinza);
 }
 
 #btn-alert, #btn-confirm, #btn-prompt {

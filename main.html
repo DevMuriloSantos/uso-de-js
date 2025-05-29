@@ -21,7 +21,7 @@
         <p>Uso: Exibe uma mensagem simples ao usuário em uma caixa de alerta.</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor1">window</span>.<span class="cor2">alert</span>(<span class="cor3">"Olá,
+            <p class="body"><span class="corRosa">window</span>.<span class="corVermelho">alert</span>(<span class="corVerde">"Olá,
                     mundo!"</span>);</p>
         </div>
         <button id="btn-alert">Teste você mesmo!</button>
@@ -36,8 +36,8 @@
         <p>Uso: Exibe uma caixa de diálogo com uma mensagem e botões "OK" e "Cancelar".</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">let</span> resposta = <span class="cor1">window</span>.<span
-                    class="cor2">confirm</span>(<span class="cor3">"Você tem certeza?"</span>);</p>
+            <p class="body"><span class="corAzul">let</span> resposta = <span class="corRosa">window</span>.<span
+                    class="corVermelho">confirm</span>(<span class="corVerde">"Você tem certeza?"</span>);</p>
         </div>
         <button id="btn-confirm">Teste você mesmo!</button>
         <p>Características:</p>
@@ -52,8 +52,8 @@
         <p>Uso: Exibe uma caixa de diálogo com uma mensagem e um campo de entrada de texto.</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">let</span> nome = <span class="cor1">window</span>.<span
-                    class="cor2">prompt</span>(<span class="cor3">"Qual é o seu nome?"</span>);</p>
+            <p class="body"><span class="corAzul">let</span> nome = <span class="corRosa">window</span>.<span
+                    class="corVermelho">prompt</span>(<span class="corVerde">"Qual é o seu nome?"</span>);</p>
         </div>
         <button id="btn-prompt">Teste você mesmo!</button>
         <p>Características:</p>
@@ -245,8 +245,8 @@
 
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">var</span> nome = <span class="cor3">João</span>;<br>
-                <span class="cor4">var</span> nome = <span class="cor3">"Maria"</span>;
+            <p class="body"><span class="corAzul">var</span> nome = <span class="corVerde">João</span>;<br>
+                <span class="corAzul">var</span> nome = <span class="corVerde">"Maria"</span>;
             </p>
         </div>
 
@@ -260,9 +260,9 @@
 
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">let</span> idade = <span class="cor1">25</span>;<br>
-                idade = <span class="cor1">30</span>; <span class="cor5">// ok</span><br>
-                <span class="cor5">// let idade = 30; // erro se no mesmo escopo</span>
+            <p class="body"><span class="corAzul">let</span> idade = <span class="corRosa">25</span>;<br>
+                idade = <span class="corRosa">30</span>; <span class="corCinza">// ok</span><br>
+                <span class="corCinza">// let idade = 30; // erro se no mesmo escopo</span>
             </p>
         </div>
 
@@ -276,9 +276,9 @@
 
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">const</span> <span class="cor1">PI</span> = <span
-                    class="cor1">3.14</span>;<br>
-                <span class="cor5">// PI = 3.1415;</span> <span class="cor5">// erro</span>
+            <p class="body"><span class="corAzul">const</span> <span class="corRosa">PI</span> = <span
+                    class="corRosa">3.14</span>;<br>
+                <span class="corCinza">// PI = 3.1415;</span> <span class="corCinza">// erro</span>
         </div>
 
         <p><i class="bi bi-exclamation"></i> Objetos e arrays criados com const podem ter seus conteúdos modificados,
@@ -286,10 +286,10 @@
 
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">const</span> pessoa = {<span class="cor1">nome</span>: <span
-                    class="cor3">"Ana"</span> };<br>
-                pessoa.nome = <span class="cor3">"Clara"</span>; <span class="cor5">// ok</span><br>
-                <span class="cor5">// pessoa = { nome: "Lucas" }; // erro</span>
+            <p class="body"><span class="corAzul">const</span> pessoa = {<span class="corRosa">nome</span>: <span
+                    class="corVerde">"Ana"</span> };<br>
+                pessoa.nome = <span class="corVerde">"Clara"</span>; <span class="corCinza">// ok</span><br>
+                <span class="corCinza">// pessoa = { nome: "Lucas" }; // erro</span>
             </p>
         </div>
 
@@ -302,8 +302,8 @@
 
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">let</span> precoProduto = <span class="cor1">100</span>;<br>
-                <span class="cor4">const</span> numeroMaximoDeTentativas = <span class="cor1">3</span>;
+            <p class="body"><span class="corAzul">let</span> precoProduto = <span class="corRosa">100</span>;<br>
+                <span class="corAzul">const</span> numeroMaximoDeTentativas = <span class="corRosa">3</span>;
             </p>
         </div>
 
@@ -353,7 +353,7 @@
 
                 <tr>
                     <td>bigint</td>
-                    <td>1234567890123456789012345678901234567890n</td>
+                    <td>123456789...n</td>
                     <td>Números inteiros grandes</td>
                 </tr>
 
@@ -404,6 +404,7 @@
                     <td>/[a-z]/</td>
                     <td>Expressão regular</td>
                 </tr>
+
             </tbody>
         </table>
 
