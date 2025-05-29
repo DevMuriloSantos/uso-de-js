@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Tudo sobre JS</title>
 </head>
+
 <body>
     <main>
         <h1>Módulo A e B</h1>
 
         <h2>Uso da propriedade window</h2>
-        <p>O objeto window é o objeto global no navegador para JavaScript e oferece várias funções úteis, entre elas:</p>
+        <p>O objeto window é o objeto global no navegador para JavaScript e oferece várias funções úteis, entre elas:
+        </p>
 
         <h3><i class="bi bi-circle-fill" id="alert"></i> <span class="linux">window.alert()</span></h3>
         <p>Uso: Exibe uma mensagem simples ao usuário em uma caixa de alerta.</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor1">window</span>.<span class="cor2">alert</span>(<span class="cor3">"Olá, mundo!"</span>);</p>
+            <p class="body"><span class="cor1">window</span>.<span class="cor2">alert</span>(<span class="cor3">"Olá,
+                    mundo!"</span>);</p>
         </div>
         <button id="btn-alert">Teste você mesmo!</button>
         <p>Características:</p>
@@ -32,7 +36,8 @@
         <p>Uso: Exibe uma caixa de diálogo com uma mensagem e botões "OK" e "Cancelar".</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">let</span> resposta = <span class="cor1">window</span>.<span class="cor2">confirm</span>(<span class="cor3">"Você tem certeza?"</span>);</p>
+            <p class="body"><span class="cor4">let</span> resposta = <span class="cor1">window</span>.<span
+                    class="cor2">confirm</span>(<span class="cor3">"Você tem certeza?"</span>);</p>
         </div>
         <button id="btn-confirm">Teste você mesmo!</button>
         <p>Características:</p>
@@ -47,7 +52,8 @@
         <p>Uso: Exibe uma caixa de diálogo com uma mensagem e um campo de entrada de texto.</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="cor4">let</span> nome = <span class="cor1">window</span>.<span class="cor2">prompt</span>(<span class="cor3">"Qual é o seu nome?"</span>);</p>
+            <p class="body"><span class="cor4">let</span> nome = <span class="cor1">window</span>.<span
+                    class="cor2">prompt</span>(<span class="cor3">"Qual é o seu nome?"</span>);</p>
         </div>
         <button id="btn-prompt">Teste você mesmo!</button>
         <p>Características:</p>
@@ -60,7 +66,349 @@
         <p>Os comentários em JS podem ser estruturados da seguinte forma: </p>
         <p><strong>//</strong> --> uma única linha de comentário;</p>
         <p><strong>/**/</strong> --> mais de uma linha de comentário.</p>
+
+
+        <h2>Simbologia no JS</h2>
+        <p>A simbologia no JavaScript se refere ao uso de símbolos e caracteres especiais que têm significados
+            específicos na linguagem. Abaixo está uma visão geral dos principais símbolos utilizados no JavaScript,
+            divididos por categorias: </p>
+
+        <h3><i class="bi bi-caret-right-fill"></i> Operadores Matemáticos e de Atribuição</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>símbolo</td>
+                    <td>Significado</td>
+                    <td>Exemplo</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Soma ou concatenação</td>
+                    <td>a + b, "a" + "b"</td>
+                </tr>
+
+                <tr>
+                    <td>-</td>
+                    <td>Subtração</td>
+                    <td>a - b, "a" - "b"</td>
+                </tr>
+
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicação</td>
+                    <td>a * b, "a" * "b"</td>
+                </tr>
+
+                <tr>
+                    <td>/</td>
+                    <td>Divisão</td>
+                    <td>a / b, "a" / "b"</td>
+                </tr>
+
+                <tr>
+                    <td>%</td>
+                    <td>Resto da Divisão</td>
+                    <td>a % b</td>
+                </tr>
+
+                <tr>
+                    <td>=</td>
+                    <td>Atribuição (recebimento)</td>
+                    <td>a = b</td>
+                </tr>
+
+                <tr>
+                    <td>**</td>
+                    <td>Exponenciação</td>
+                    <td>a ** b</td>
+                </tr>
+
+                <tr>
+                    <td>+=</td>
+                    <td>Atribuição com soma</td>
+                    <td>a += b (equivalente a a = a + b)</td>
+                </tr>
+
+                <tr>
+                    <td>-=</td>
+                    <td>Atribuição com subtração</td>
+                    <td>a -= b (equivalente a a = a - b)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3><i class="bi bi-caret-right-fill"></i> Operadores de Comparação</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>símbolo</td>
+                    <td>Significado</td>
+                    <td>Exemplo</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>==</td>
+                    <td>Igualdade</td>
+                    <td>a == b</td>
+                </tr>
+
+                <tr>
+                    <td>===</td>
+                    <td>Igualdade Estrita</td>
+                    <td>a === b</td>
+                </tr>
+
+                <tr>
+                    <td>!=</td>
+                    <td>Desigualdade</td>
+                    <td>a != b</td>
+                </tr>
+
+                <tr>
+                    <td>!==</td>
+                    <td>Desigualdade Estrita</td>
+                    <td>a !== b</td>
+                </tr>
+
+                <tr>
+                    <td>&gt;</td>
+                    <td>Maior que</td>
+                    <td>a &gt; b</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;</td>
+                    <td>Menor que</td>
+                    <td>a &lt; b</td>
+                </tr>
+
+                <tr>
+                    <td>&gt;=</td>
+                    <td>Maior ou igual a</td>
+                    <td>a &gt;= b</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;=</td>
+                    <td>Menor ou igual a</td>
+                    <td>a &lt;= b</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3><i class="bi bi-caret-right-fill"></i> Operadores Lógicos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>símbolo</td>
+                    <td>Significado</td>
+                    <td>Exemplo</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>&&</td>
+                    <td>E lógico (AND)</td>
+                    <td>a && b</td>
+                </tr>
+
+                <tr>
+                    <td>||</td>
+                    <td>OU (OR)</td>
+                    <td>a || b</td>
+                </tr>
+
+                <tr>
+                    <td>!</td>
+                    <td>Não lógico (NOT)</td>
+                    <td>!a</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Variáveis</h2>
+        <p>No JavaScript, variáveis são usadas para armazenar dados. Você pode declarar variáveis usando três
+            palavras-chave principais:</p>
+        <h3><i class="bi bi-circle-fill" id="prompt"></i> <span class="linux">var</span> – (Forma antiga, evite se
+            possível)</h3>
+        <ul>
+            <li>Escopo de função</li>
+            <li>Pode ser redeclarada e atualizada</li>
+            <li>Pode causar comportamentos inesperados</li>
+        </ul>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body"><span class="cor4">var</span> nome = <span class="cor3">João</span>;<br>
+                <span class="cor4">var</span> nome = <span class="cor3">"Maria"</span>;
+            </p>
+        </div>
+
+        <h3><i class="bi bi-circle-fill" id="confirm"></i> <span class="linux">let – (Recomendado para variáveis que
+                mudam)</span></h3>
+        <ul>
+            <li>Escopo de bloco</li>
+            <li>Pode ser atualizada, mas não redeclarada no mesmo escopo</li>
+            <li>Comportamento mais previsível</li>
+        </ul>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body"><span class="cor4">let</span> idade = <span class="cor1">25</span>;<br>
+                idade = <span class="cor1">30</span>; <span class="cor5">// ok</span><br>
+                <span class="cor5">// let idade = 30; // erro se no mesmo escopo</span>
+            </p>
+        </div>
+
+        <h3><i class="bi bi-circle-fill" id="prompt"></i> <span class="linux">const – (Recomendado para valores
+                constantes)</span></h3>
+        <ul>
+            <li>Escopo de bloco</li>
+            <li>Não pode ser atualizada nem redeclarada</li>
+            <li>Ideal para variáveis que não mudam (como objetos ou funções fixas)</li>
+        </ul>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body"><span class="cor4">const</span> <span class="cor1">PI</span> = <span
+                    class="cor1">3.14</span>;<br>
+                <span class="cor5">// PI = 3.1415;</span> <span class="cor5">// erro</span>
+        </div>
+
+        <p><i class="bi bi-exclamation"></i> Objetos e arrays criados com const podem ter seus conteúdos modificados,
+            mas não podem ser reatribuídos:</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body"><span class="cor4">const</span> pessoa = {<span class="cor1">nome</span>: <span
+                    class="cor3">"Ana"</span> };<br>
+                pessoa.nome = <span class="cor3">"Clara"</span>; <span class="cor5">// ok</span><br>
+                <span class="cor5">// pessoa = { nome: "Lucas" }; // erro</span>
+            </p>
+        </div>
+
+        <h2><i class="bi bi-lightbulb"></i> Convenções de nomes de variáveis</h2>
+        <ul>
+            <li>Use nomes descritivos e em camelCase</li>
+            <li>Evite usar palavras reservadas (como if, while, class).</li>
+            <li>Variáveis não podem começar com números nem ter espaços.</li>
+        </ul>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body"><span class="cor4">let</span> precoProduto = <span class="cor1">100</span>;<br>
+                <span class="cor4">const</span> numeroMaximoDeTentativas = <span class="cor1">3</span>;
+            </p>
+        </div>
+
+        <h2>Data Types</h2>
+        <p>JavaScript possui dois grupos principais de tipos de dados (data types): </p>
+        <h3>Tipos Primitivos</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Tipo</td>
+                    <td>Exemplo</td>
+                    <td>Detalhes</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>string</td>
+                    <td>"Olá", 'texto', `template`</td>
+                    <td>Texto (sequência de caracteres)</td>
+                </tr>
+
+                <tr>
+                    <td>number</td>
+                    <td>10, 3.14, -42</td>
+                    <td>Números inteiros ou decimais</td>
+                </tr>
+
+                <tr>
+                    <td>boolean</td>
+                    <td>true, false</td>
+                    <td>Representa um valor verdadeiro ou falso</td>
+                </tr>
+
+                <tr>
+                    <td>undefined</td>
+                    <td>let x;</td>
+                    <td>Variável declarada, mas sem valor</td>
+                </tr>
+
+                <tr>
+                    <td>null</td>
+                    <td>let y = null;</td>
+                    <td>Variável declarada, mas sem valor</td>
+                </tr>
+
+                <tr>
+                    <td>bigint</td>
+                    <td>1234567890123456789012345678901234567890n</td>
+                    <td>Números inteiros grandes</td>
+                </tr>
+
+                <tr>
+                    <td>symbol</td>
+                    <td>Symbol("id")</td>
+                    <td>Representa um identificador único e imutável</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Tipos de referência (objetos)</h3>
+
+        <table>
+            <thead>
+                <td>Tipo</td>
+                <td>Exemplo</td>
+                <td>Detalhes</td>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Object</td>
+                    <td>{ nome: "Murilo", idade: 21 }</td>
+                    <td>Estrutura de dados com pares chave-valor</td>
+                </tr>
+
+                <tr>
+                    <td>array</td>
+                    <td>[1, 2, 3]</td>
+                    <td>Lista ordenada de valores</td>
+                </tr>
+
+                <tr>
+                    <td>function</td>
+                    <td>function soma(a, b) { return a + b; } ou function() {} ou () => {}</td>
+                    <td>Bloco de código reutilizável</td>
+                </tr>
+
+                <tr>
+                    <td>date</td>
+                    <td>new Date()</td>
+                    <td>Data e hora</td>
+                </tr>
+
+                <tr>
+                    <td>regexp</td>
+                    <td>/[a-z]/</td>
+                    <td>Expressão regular</td>
+                </tr>
+            </tbody>
+        </table>
+
     </main>
 </body>
 <script src="main.js"></script>
+
 </html>

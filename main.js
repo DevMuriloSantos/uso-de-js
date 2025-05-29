@@ -16,7 +16,7 @@ const btnprompt = document.getElementById('btn-prompt');
     });
 
     btnprompt.addEventListener('click', function() {
-        let nome = window.prompt('Você clicou no teste do window prompt');
+        let nome = window.prompt('Você clicou no teste do window prompt, digite qual é o seu nome');
         if (nome) {
             window.alert('Olá, ' + nome);
         } else {

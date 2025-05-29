@@ -3,6 +3,7 @@
     --cor2: #F22C3D;
     --cor3: #3f9850;
     --cor4: #2874A2;
+    --cor5: #787878;
 }
 
 * {
@@ -92,6 +93,10 @@ div {
     color: var(--cor4)
 }
 
+.cor5 {
+    color: var(--cor5);
+}
+
 #btn-alert, #btn-confirm, #btn-prompt {
     margin: 5px 0px 5px 0px;
     padding: 2px;
@@ -100,6 +105,36 @@ div {
 li {
     text-align: start;
     margin-left: 26px;
+}
+
+.bi-caret-right-fill {
+    color: #4085DC;
+}
+
+table {
+    margin-top: 30px;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    background-color: #212121;
+    color: white;
+    border-radius: 5px;
+}
+
+table > tbody > tr > td{
+    color: black;
+    padding: 5px;
+    border-top: 1px solid #424242;
+    color: white;
+}
+
+.bi-exclamation {
+    color: red;
+    font-size: 2em;
+}
+
+.bi-lightbulb {
+    color: rgb(113, 130, 79);
 }
 
 @media screen and (min-width: 768px) {
