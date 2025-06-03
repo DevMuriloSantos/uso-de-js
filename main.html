@@ -404,9 +404,102 @@
                     <td>/[a-z]/</td>
                     <td>Expressão regular</td>
                 </tr>
-
             </tbody>
         </table>
+
+        <h2>Tratamento de dados</h2>
+        <p>O tratamento de dados com JavaScript envolve diversas operações para limpar, transformar, validar e formatar dados antes de usá-los ou exibi-los. Abaixo estão as técnicas mais comuns organizadas por tipo de dado:</p>
+
+        <p><i class="bi bi-card-text"></i> Strings</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+
+            <p class="body">
+                <span class="corAzul">let</span> nome = <span class="corVerde">" Murilo "</span>;<br>
+                <br>
+
+                nome.<span class="corVermelho">trim()</span>; <span class="corCinza">// Remove espaços no início e no fim</span><br>
+
+                nome.<span class="corVermelho">toUpperCase()</span>; <span class="corCinza">// Converte para maiúsculas -- " MURILO "</span><br>
+
+                nome.<span class="corVermelho">toLowerCase()</span>; <span class="corCinza">// Converte para minúsculas -- " murilo "</span><br>
+
+                nome.<span class="corVermelho">replace</span>(<span class="corVerde">/MURILO/g</span>, <span class="corVerde">"Murilo"</span>); <span class="corCinza">// Substitui "MURILO" por "Murilo"</span><br>
+
+                nome.<span class="corVermelho">includes</span>(<span class="corVerde">" "</span>); <span class="corCinza">// Divide a string em um array -- ["", "Murilo", ""]</span><br>
+            </p>
+        </div>
+
+        <p>Para converter uma string para number em JavaScript, existem várias formas — cada uma adequada para contextos diferentes. Aqui estão as mais usadas:</p>
+
+        <h2>Usar number()</h2>
+        <p>Converte para número inteiro ou decimal (float).</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+
+            <p class="body">
+                <span class="corVermelho">Number</span>(<span class="corVerde">("123")</span>); <span class="corCinza">// 123</span><br>
+                <span class="corVermelho">Number</span>(<span class="corVerde">"12.34"</span>); <span class="corCinza">// 12.34</span><br>
+                <span class="corVermelho">Number</span>(<span class="corVerde">"abc"</span>); <span class="corCinza">// NaN (Não é um número)</span>
+            </p>
+        </div>
+
+        <h2>Usar parseInt()</h2>
+        <p>Converte para inteiro, ignorando os decimais.</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+
+            <p class="body">
+                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"123"</span>); <span class="corCinza">// 123</span><br>
+                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"12.34"</span>); <span class="corCinza">// 12</span><br>
+                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"123abc"</span>); <span class="corCinza">// 123 (lê até onde consegue)</span>
+            </p>
+        </div>
+
+        <h2>Usar parseFloat()</h2>
+        <p>Converte para número decimal (float), mantendo os decimais.</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+
+            <p class="body">
+                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"12"</span>); <span class="corCinza">// 12</span><br>
+                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"12.34"</span>); <span class="corCinza">// 12.34</span><br>
+                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"abc"</span>); <span class="corCinza">// NaN (Não é um número)</span>
+            </p>
+        </div>
+
+        <h2>Exemplo de conversão de string para number</h2>
+
+        <div>
+            <p class="header">JavaScript</p>
+
+            <p class="body">
+                <span class="corVermelho">let</span> <span class="corAzul">n1</span> = <span class="corVerde">"10"</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n2</span> = <span class="corVerde">"15"</span><br>
+
+                <span class="corAmarelo">teste.innerHTML</span> = <span class="corVerde">'A soma dos dois números é: '</span> <span class="corAzul">${parseInt(n1) + parseInt(n2)}</span><br>
+                <span class="corCinza">// Resultado: 25. Considera-se que "teste" refere-se a um id fictício de um parágrafo</span>
+            </p>
+        </div>
+
+        <div>
+            <p class="header">JavaScript</p>
+
+            <p class="body">
+                <span class="corVermelho">let</span> <span class="corAzul">n3</span> = <span class="corVerde">window.prompt("Digite um número")</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n4</span> = <span class="corVerde">window.prompt("Digite outro número")</span><br>
+
+                <span class="corAmarelo">t.innerHTML</span> = <span class="corVerde">'A soma dos dois números é: '</span> <span class="corAzul">${parseInt(n3) + parseInt(n4)}</span><br>
+                <span class="corCinza">// Resultado: 25. Considerando que o usuário digitou 10 e 15 respectivamente.</span>
+            </p>
+        </div>
+
+        <p id="n"></p>
+        <button id="mat">Teste matemático</button>
 
     </main>
 </body>

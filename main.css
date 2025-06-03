@@ -3,7 +3,32 @@
     --corVermelho: #F22C3D;
     --corVerde: #3f9850;
     --corAzul: #2874A2;
+    --corAmarelo: #CF850D;
     --corCinza: #787878;
+}
+
+.corRosa {
+    color: var(--corRosa);
+}
+
+.corVermelho {
+    color: var(--corVermelho);
+}
+
+.corVerde {
+    color: var(--corVerde);
+}
+
+.corAzul {
+    color: var(--corAzul)
+}
+
+.corAmarelo {
+    color: var(--corAmarelo);
+}
+
+.corCinza {
+    color: var(--corCinza);
 }
 
 * {
@@ -30,15 +55,19 @@ main {
     box-shadow: 3px 2px 16px rgb(110, 100, 42);
 }
 
-main > h1 {
+main>h1 {
     padding-bottom: 10px;
 }
 
-h2, h3{
+h2,
+h3 {
     padding: 5px;
 }
 
-.linux, .corRosa, .corVermelho, .corVerde {
+.linux,
+.corRosa,
+.corVermelho,
+.corVerde {
     font-family: linux-libertine, "Courier New", Courier, monospace;
 }
 
@@ -77,27 +106,10 @@ div {
     border-bottom-right-radius: 6px;
 }
 
-.corRosa {
-    color: var(--corRosa);
-}
 
-.corVermelho {
-    color: var(--corVermelho);
-}
-
-.corVerde {
-    color: var(--corVerde);
-}
-
-.corAzul {
-    color: var(--corAzul)
-}
-
-.corCinza {
-    color: var(--corCinza);
-}
-
-#btn-alert, #btn-confirm, #btn-prompt {
+#btn-alert,
+#btn-confirm,
+#btn-prompt {
     margin: 5px 0px 5px 0px;
     padding: 2px;
 }
@@ -121,7 +133,7 @@ table {
     border-radius: 5px;
 }
 
-table > tbody > tr > td{
+table>tbody>tr>td {
     color: black;
     padding: 5px;
     border-top: 1px solid #424242;
@@ -137,6 +149,10 @@ table > tbody > tr > td{
     color: rgb(113, 130, 79);
 }
 
+#n {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     main {
         width: 65%;
@@ -145,7 +161,7 @@ table > tbody > tr > td{
     ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;  
+        gap: 10px;
         justify-content: center;
         align-items: center;
     }
