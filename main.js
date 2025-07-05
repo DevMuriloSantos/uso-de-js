@@ -35,4 +35,9 @@ mat.addEventListener('click', function () {
     
     n.style.display = 'block';
     n.innerHTML = `A soma dos números é: ${parseInt(n1) + parseInt(n2)}`;
+
+    /*Podemos fazer de outra forma também:
+      n1 = Number.parseInt(window.prompt("Digite o primeiro número entre 1 e 10: "));
+      n2 = Number.parseInt(window.prompt("Digite o segundo número entre 1 e 10: "));
+    */
 });
