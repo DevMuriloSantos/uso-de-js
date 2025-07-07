@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ordem de Precedência - JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(110, 100, 42);
+            color: white;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>📌 Ordem de Precedência de Operadores JavaScript</caption>
+        <thead>
+            <tr>
+                <th>Precedência</th>
+                <th>Operador(es)</th>
+                <th>Associatividade</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>()</td>
+                <td>-</td>
+                <td>Agrupamento</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>. [] ()</td>
+                <td>esquerda</td>
+                <td>Acesso a membros, chamadas de função, indexação</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>new (com argumentos)</td>
+                <td>direita</td>
+                <td>Instancia objetos</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>++, --, !, ~, +, -, typeof, void, delete</td>
+                <td>direita</td>
+                <td>Operadores unários</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>**</td>
+                <td>direita</td>
+                <td>Exponenciação</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>*, /, %</td>
+                <td>esquerda</td>
+                <td>Multiplicação, divisão, resto</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>+, -</td>
+                <td>esquerda</td>
+                <td>Soma, subtração</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>&lt;&lt;, &gt;&gt;, &gt;&gt;&gt;</td>
+                <td>esquerda</td>
+                <td>Shift (bitwise)</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>&lt;, &lt;=, &gt;, &gt;=, in, instanceof</td>
+                <td>esquerda</td>
+                <td>Comparações</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>==, !=, ===, !==</td>
+                <td>esquerda</td>
+                <td>Igualdade</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&</td>
+                <td>esquerda</td>
+                <td>AND bitwise</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>^</td>
+                <td>esquerda</td>
+                <td>XOR bitwise</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>|</td>
+                <td>esquerda</td>
+                <td>OR bitwise</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>&&</td>
+                <td>esquerda</td>
+                <td>AND lógico</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>||</td>
+                <td>esquerda</td>
+                <td>OR lógico</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>??</td>
+                <td>esquerda</td>
+                <td>Nullish coalescing</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>?: (ternário)</td>
+                <td>direita</td>
+                <td>Condicional ternário</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>=, +=, -=, *=, /=, %=, **=, etc.</td>
+                <td>direita</td>
+                <td>Atribuição</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>yield, yield*</td>
+                <td>direita</td>
+                <td>Generator</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>, (vírgula)</td>
+                <td>esquerda</td>
+                <td>Separador de expressões</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
