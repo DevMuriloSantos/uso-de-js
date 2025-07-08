@@ -42,9 +42,12 @@ body {
     background-color: #322f2a;
 }
 
+.container-fluid {
+    margin-bottom: 0;
+}
+
 main {
     margin: auto;
-    margin-top: 50px;
     padding: 20px 0px 20px 0px;
     width: 350px;
     border-radius: 8px;
@@ -160,6 +163,30 @@ table>tbody>tr>td {
 
 #n {
     display: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/uso-de-js/img/dehaze_150dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg');
+}
+
+.offcanvas {
+    margin: 0;
+}
+
+.offcanvas-header {
+    margin-right: 30px;
+}
+
+.offcanvas-title {
+    color: black;
 }
 
 @media screen and (min-width: 768px) {

@@ -4,14 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Tudo sobre JS</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Meu desenvolvimento JS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="inicio.html">Módulo A e B</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-c.html">Módulo C</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
+
         <h1>Módulo A e B</h1>
 
         <h2>Uso da propriedade window</h2>
@@ -22,7 +52,8 @@
         <p>Uso: Exibe uma mensagem simples ao usuário em uma caixa de alerta.</p>
         <div>
             <p class="header">JavaScript</p>
-            <p class="body"><span class="corRosa">window</span>.<span class="corVermelho">alert</span>(<span class="corVerde">"Olá,
+            <p class="body"><span class="corRosa">window</span>.<span class="corVermelho">alert</span>(<span
+                    class="corVerde">"Olá,
                     mundo!"</span>);</p>
         </div>
         <button id="btn-alert">Teste você mesmo!</button>
@@ -409,7 +440,8 @@
         </table>
 
         <h2>Tratamento de dados</h2>
-        <p>O tratamento de dados com JavaScript envolve diversas operações para limpar, transformar, validar e formatar dados antes de usá-los ou exibi-los. Abaixo estão as técnicas mais comuns organizadas por tipo de dado:</p>
+        <p>O tratamento de dados com JavaScript envolve diversas operações para limpar, transformar, validar e formatar
+            dados antes de usá-los ou exibi-los. Abaixo estão as técnicas mais comuns organizadas por tipo de dado:</p>
 
         <p><i class="bi bi-card-text"></i> Strings</p>
 
@@ -420,21 +452,29 @@
                 <span class="corAzul">let</span> nome = <span class="corVerde">" Murilo "</span>;<br>
                 <br>
 
-                nome.<span class="corVermelho">trim()</span>; <span class="corCinza">// Remove espaços no início e no fim</span><br>
+                nome.<span class="corVermelho">trim()</span>; <span class="corCinza">// Remove espaços no início e no
+                    fim</span><br>
 
-                nome.<span class="corVermelho">length</span>; <span class="corCinza">// Verifica a quantidade de caracteres da string, que nesse caso é 6</span><br>
+                nome.<span class="corVermelho">length</span>; <span class="corCinza">// Verifica a quantidade de
+                    caracteres da string, que nesse caso é 6</span><br>
 
-                nome.<span class="corVermelho">toUpperCase()</span>; <span class="corCinza">// Converte para maiúsculas -- " MURILO "</span><br>
+                nome.<span class="corVermelho">toUpperCase()</span>; <span class="corCinza">// Converte para maiúsculas
+                    -- " MURILO "</span><br>
 
-                nome.<span class="corVermelho">toLowerCase()</span>; <span class="corCinza">// Converte para minúsculas -- " murilo "</span><br>
+                nome.<span class="corVermelho">toLowerCase()</span>; <span class="corCinza">// Converte para minúsculas
+                    -- " murilo "</span><br>
 
-                nome.<span class="corVermelho">replace</span>(<span class="corVerde">/MURILO/g</span>, <span class="corVerde">"Murilo"</span>); <span class="corCinza">// Substitui "MURILO" por "Murilo"</span><br>
+                nome.<span class="corVermelho">replace</span>(<span class="corVerde">/MURILO/g</span>, <span
+                    class="corVerde">"Murilo"</span>); <span class="corCinza">// Substitui "MURILO" por
+                    "Murilo"</span><br>
 
-                nome.<span class="corVermelho">includes</span>(<span class="corVerde">" "</span>); <span class="corCinza">// Divide a string em um array -- ["", "Murilo", ""]</span><br>
+                nome.<span class="corVermelho">includes</span>(<span class="corVerde">" "</span>); <span
+                    class="corCinza">// Divide a string em um array -- ["", "Murilo", ""]</span><br>
             </p>
         </div>
 
-        <p>Para converter uma string para number em JavaScript, existem várias formas — cada uma adequada para contextos diferentes. Aqui estão as mais usadas:</p>
+        <p>Para converter uma string para number em JavaScript, existem várias formas — cada uma adequada para contextos
+            diferentes. Aqui estão as mais usadas:</p>
 
         <h2>Usar number()</h2>
         <p>Converte para número inteiro ou decimal (float).</p>
@@ -443,9 +483,12 @@
             <p class="header">JavaScript</p>
 
             <p class="body">
-                <span class="corVermelho">Number</span>(<span class="corVerde">("123")</span>); <span class="corCinza">// 123</span><br>
-                <span class="corVermelho">Number</span>(<span class="corVerde">"12.34"</span>); <span class="corCinza">// 12.34</span><br>
-                <span class="corVermelho">Number</span>(<span class="corVerde">"abc"</span>); <span class="corCinza">// NaN (Não é um número)</span>
+                <span class="corVermelho">Number</span>(<span class="corVerde">("123")</span>); <span
+                    class="corCinza">// 123</span><br>
+                <span class="corVermelho">Number</span>(<span class="corVerde">"12.34"</span>); <span
+                    class="corCinza">// 12.34</span><br>
+                <span class="corVermelho">Number</span>(<span class="corVerde">"abc"</span>); <span class="corCinza">//
+                    NaN (Não é um número)</span>
             </p>
         </div>
 
@@ -456,9 +499,12 @@
             <p class="header">JavaScript</p>
 
             <p class="body">
-                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"123"</span>); <span class="corCinza">// 123</span><br>
-                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"12.34"</span>); <span class="corCinza">// 12</span><br>
-                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"123abc"</span>); <span class="corCinza">// 123 (lê até onde consegue)</span>
+                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"123"</span>); <span class="corCinza">//
+                    123</span><br>
+                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"12.34"</span>); <span
+                    class="corCinza">// 12</span><br>
+                <span class="corAmarelo">parseInt</span>(<span class="corVerde">"123abc"</span>); <span
+                    class="corCinza">// 123 (lê até onde consegue)</span>
             </p>
         </div>
 
@@ -469,9 +515,12 @@
             <p class="header">JavaScript</p>
 
             <p class="body">
-                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"12"</span>); <span class="corCinza">// 12</span><br>
-                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"12.34"</span>); <span class="corCinza">// 12.34</span><br>
-                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"abc"</span>); <span class="corCinza">// NaN (Não é um número)</span>
+                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"12"</span>); <span
+                    class="corCinza">// 12</span><br>
+                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"12.34"</span>); <span
+                    class="corCinza">// 12.34</span><br>
+                <span class="corAmarelo">parseFloat</span>(<span class="corVerde">"abc"</span>); <span
+                    class="corCinza">// NaN (Não é um número)</span>
             </p>
         </div>
 
@@ -481,11 +530,15 @@
             <p class="header">JavaScript</p>
 
             <p class="body">
-                <span class="corVermelho">let</span> <span class="corAzul">n1</span> = <span class="corVerde">"10"</span><br>
-                <span class="corVermelho">let</span> <span class="corAzul">n2</span> = <span class="corVerde">"15"</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n1</span> = <span
+                    class="corVerde">"10"</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n2</span> = <span
+                    class="corVerde">"15"</span><br>
 
-                <span class="corAmarelo">teste.innerHTML</span> = <span class="corVerde">'A soma dos dois números é: '</span> <span class="corAzul">${parseInt(n1) + parseInt(n2)}</span><br>
-                <span class="corCinza">// Resultado: 25. Considera-se que "teste" refere-se a um id fictício de um parágrafo</span>
+                <span class="corAmarelo">teste.innerHTML</span> = <span class="corVerde">'A soma dos dois números é:
+                    '</span> <span class="corAzul">${parseInt(n1) + parseInt(n2)}</span><br>
+                <span class="corCinza">// Resultado: 25. Considera-se que "teste" refere-se a um id fictício de um
+                    parágrafo</span>
             </p>
         </div>
 
@@ -493,15 +546,20 @@
             <p class="header">JavaScript</p>
 
             <p class="body">
-                <span class="corVermelho">let</span> <span class="corAzul">n3</span> = <span class="corVerde">window.prompt("Digite um número")</span><br>
-                <span class="corVermelho">let</span> <span class="corAzul">n4</span> = <span class="corVerde">window.prompt("Digite outro número")</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n3</span> = <span
+                    class="corVerde">window.prompt("Digite um número")</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n4</span> = <span
+                    class="corVerde">window.prompt("Digite outro número")</span><br>
 
-                <span class="corAmarelo">t.innerHTML</span> = <span class="corVerde">'A soma dos dois números é: '</span> <span class="corAzul">${parseInt(n3) + parseInt(n4)}</span><br>
-                <span class="corCinza">// Resultado: 25. Considerando que o usuário digitou 10 e 15 respectivamente.</span>
+                <span class="corAmarelo">t.innerHTML</span> = <span class="corVerde">'A soma dos dois números é:
+                    '</span> <span class="corAzul">${parseInt(n3) + parseInt(n4)}</span><br>
+                <span class="corCinza">// Resultado: 25. Considerando que o usuário digitou 10 e 15
+                    respectivamente.</span>
             </p>
         </div>
 
-        <p>Podemos também fazer a conversão de forma mais direta usando apenas o elemento <strong>Number</strong> assim já foi citado mais acima:</p>
+        <p>Podemos também fazer a conversão de forma mais direta usando apenas o elemento <strong>Number</strong> assim
+            já foi citado mais acima:</p>
 
         <div>
             <p class="header">
@@ -509,11 +567,15 @@
             </p>
 
             <p class="body">
-                <span class="corVermelho">let</span> <span class="corAzul">n5</span> = <span class="corVerde">Number(window.prompt("Digite um número"))</span><br>
-                <span class="corVermelho">let</span> <span class="corAzul">n6</span> = <span class="corVerde">Number(window.prompt("Digite outro número"))</span><br>
-                
-                <span class="corAmarelo">t.innerHTML</span> = <span class="corVerde">'A soma dos dois números é: '</span> <span class="corAzul">${n5 + n6}</span><br>
-                <span class="corCinza">// Resultado: 25. Considerando que o usuário digitou 10 e 15 respectivamente.</span>
+                <span class="corVermelho">let</span> <span class="corAzul">n5</span> = <span
+                    class="corVerde">Number(window.prompt("Digite um número"))</span><br>
+                <span class="corVermelho">let</span> <span class="corAzul">n6</span> = <span
+                    class="corVerde">Number(window.prompt("Digite outro número"))</span><br>
+
+                <span class="corAmarelo">t.innerHTML</span> = <span class="corVerde">'A soma dos dois números é:
+                    '</span> <span class="corAzul">${n5 + n6}</span><br>
+                <span class="corCinza">// Resultado: 25. Considerando que o usuário digitou 10 e 15
+                    respectivamente.</span>
             </p>
         </div>
 
@@ -529,7 +591,8 @@
             <p class="body">
                 <span class="corAzul">let</span> num = <span class="corRosa">42</span>;<br>
                 <span class="corAzul">let</span> text = num.<span class="corVermelho">toString</span>();<br>
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(texto); <span class="corCinza">// "42"</span>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(texto); <span
+                    class="corCinza">// "42"</span>
             </p>
         </div>
 
@@ -539,12 +602,16 @@
             <p class="body">
                 <span class="corAzul">let</span> num = <span class="corRosa">42</span>;<br>
                 <span class="corAzul">let</span> text = <span class="corVermelho">String</span>(num);<br>
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(texto); <span class="corCinza">// "42"</span>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(texto); <span
+                    class="corCinza">// "42"</span>
             </p>
         </div>
 
         <h1>Template String</h1>
-        <p>As template strings (introduzida no ES6) são uma forma moderna de trabalhar com strings de maneira mais fácil e intuitiva. Elas permitem a interpolação de variáveis e expressões dentro de strings, utilizando a sintaxe de crase (` `) ao invés de aspas simples ou duplas. Dentro de uma template string, você insere valores com a sintaxe ${variavel}.</p>
+        <p>As template strings (introduzida no ES6) são uma forma moderna de trabalhar com strings de maneira mais fácil
+            e intuitiva. Elas permitem a interpolação de variáveis e expressões dentro de strings, utilizando a sintaxe
+            de crase (` `) ao invés de aspas simples ou duplas. Dentro de uma template string, você insere valores com a
+            sintaxe ${variavel}.</p>
 
         <h2>Exemplo simples</h2>
 
@@ -553,14 +620,17 @@
             <p class="body">
                 <span class="corAzul">let</span> nome = <span class="corVerde">"Murilo"</span>;<br>
                 <span class="corAzul">let</span> idade = <span class="corRosa">15</span>;<br><br>
-                <span class="corAzul">let</span> mensagem = <span class="corRosa">`Olá, meu nome é <span class="corAmarelo">${nome}</span> e eu tenho <span class="corAmarelo">${idade}</span> anos.`</span>;<br>
+                <span class="corAzul">let</span> mensagem = <span class="corRosa">`Olá, meu nome é <span
+                        class="corAmarelo">${nome}</span> e eu tenho <span class="corAmarelo">${idade}</span>
+                    anos.`</span>;<br>
                 <span class="corRosa">console</span>.<span class="corVermelho">log</span>(mensagem);<br>
                 <span class="corCinza">// "Olá, meu nome é Murilo e eu tenho 15 anos."</span>
             </p>
         </div>
 
         <h1>Propriedade toFixed</h1>
-        <p>O método toFixed(n) formata um número para ter exatamente n casas decimais, retornando uma string com o número formatado.</p>
+        <p>O método toFixed(n) formata um número para ter exatamente n casas decimais, retornando uma string com o
+            número formatado.</p>
 
         <h2>Exemplo</h2>
 
@@ -568,8 +638,10 @@
             <p class="header">JavaScript</p>
             <p class="body">
                 <span class="corAzul">let</span> num = <span class="coRosa">3.14159</span><br><br>
-                <span class="corRosa">console</span>.<span corVermelho>log</span>(num.<span class="corVermelho">toFixed</span>(2)); <span class="corCinza">// "3.14"</span><br>
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(num.<span class="corVermelho">toFixed</span>(4)); <span class="corCinza">// "3.1416"</span>
+                <span class="corRosa">console</span>.<span corVermelho>log</span>(num.<span
+                    class="corVermelho">toFixed</span>(2)); <span class="corCinza">// "3.14"</span><br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(num.<span
+                    class="corVermelho">toFixed</span>(4)); <span class="corCinza">// "3.1416"</span>
             </p>
         </div>
 
@@ -585,12 +657,14 @@
             <p class="header">JavaScript</p>
             <p class="body">
                 <span class="corAzul">let</span> x = <span class="corRosa">1.005</span>;<br>
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(x.<span class="corVermelho">toFixed</span>(2)); <span class="corCinza">// "1.01" (arredondou)</span>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(x.<span
+                    class="corVermelho">toFixed</span>(2)); <span class="corCinza">// "1.01" (arredondou)</span>
             </p>
         </div>
 
         <h1>Propriedade toLocaleString</h1>
-        <p>Ela converte números ou datas em strings formatadas conforme a localidade (idioma e país), seguindo padrões culturais (por exemplo, separador decimal, símbolo de moeda, formato de data).</p>
+        <p>Ela converte números ou datas em strings formatadas conforme a localidade (idioma e país), seguindo padrões
+            culturais (por exemplo, separador decimal, símbolo de moeda, formato de data).</p>
 
         <h2>Exemplo com número</h2>
 
@@ -598,9 +672,13 @@
             <p class="header">JavaScript</p>
             <p class="body">
                 <span class="corAzul">let</span> num = <span class="corRosa">1234567.89</span>;<br>
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(num.<span class="corVermelho">toLocaleString</span>(<span class="corRosa">"en-US"</span>)); <span class="corCinza">// "1,234,567.89" (padrão EUA)</span><br><br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(num.<span
+                    class="corVermelho">toLocaleString</span>(<span class="corRosa">"en-US"</span>)); <span
+                    class="corCinza">// "1,234,567.89" (padrão EUA)</span><br><br>
 
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(num.<span class="corVermelho">toLocaleString</span>(<span class="corRosa">"pt-BR"</span>)); <span class="corCinza">// "1.234.567,89" (padrão Brasil)</span>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(num.<span
+                    class="corVermelho">toLocaleString</span>(<span class="corRosa">"pt-BR"</span>)); <span
+                    class="corCinza">// "1.234.567,89" (padrão Brasil)</span>
             </p>
         </div>
 
@@ -609,18 +687,28 @@
             <p class="header">JavaScript</p>
             <p class="body">
                 <span class="corAzul">let</span> preço = <span class="corRosa">1999.99</span>;<br>
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(preço.<span class="corVermelho">toLocaleString</span>(<span class="corRosa">"pt-BR"</span>, <span class="corRosa">{style: "currency", currency: "BRL"}</span>)); <span class="corCinza">// "R$ 1.999,99" (padrão Brasil)</span><br><br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(preço.<span
+                    class="corVermelho">toLocaleString</span>(<span class="corRosa">"pt-BR"</span>, <span
+                    class="corRosa">{style: "currency", currency: "BRL"}</span>)); <span class="corCinza">// "R$
+                    1.999,99" (padrão Brasil)</span><br><br>
 
-                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(preço.<span class="corVermelho">toLocaleString</span>(<span class="corRosa">"en-US"</span>, <span class="corRosa">{style: "currency", currency: "USD"}</span>)); <span class="corCinza">// "$ 1,999.99" (padrão EUA)</span>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(preço.<span
+                    class="corVermelho">toLocaleString</span>(<span class="corRosa">"en-US"</span>, <span
+                    class="corRosa">{style: "currency", currency: "USD"}</span>)); <span class="corCinza">// "$
+                    1,999.99" (padrão EUA)</span>
             </p>
         </div>
 
         <h1>Ordem geral de precedência</h1>
-        <p>A ordem de precedência determina a sequência em que as operações são realizadas em uma expressão. Em JavaScript, a ordem de precedência é a seguinte do maior para o menor (mais forte para o mais fraco):</p>
+        <p>A ordem de precedência determina a sequência em que as operações são realizadas em uma expressão. Em
+            JavaScript, a ordem de precedência é a seguinte do maior para o menor (mais forte para o mais fraco):</p>
+        <button><a href="precedencia.html">Clique aqui para ver mais detalhes.</a></button>
     </main>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 
 <script src="main.js"></script>
 
