@@ -179,14 +179,40 @@ table>tbody>tr>td {
 
 .offcanvas {
     margin: 0;
+    background-color: #101418;
 }
 
 .offcanvas-header {
     margin-right: 30px;
+    padding: 1rem 0rem;
 }
 
-.offcanvas-title {
-    color: black;
+.offcanvas-title, .nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(148, 144, 144);
+}
+
+.bi-journal-code, .bi-filetype-js, .bi-code-slash {
+    font-size: 20pt;
+    margin-right: 8px;
+    color: #66C0F0;
+}
+
+.bi-journal-code::before {
+    animation: rotate 2s normal infinite;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
 
 @media screen and (min-width: 768px) {
