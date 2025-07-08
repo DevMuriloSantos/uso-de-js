@@ -43,9 +43,3 @@ mat.addEventListener('click', function () {
 });
 
 // Ínicio do módulo C
-
-function exibirExemplo() {
-    const img = document.getElementsByTagName('img')[0];
-
-    img.src = 'https://github.com/DevMuriloSantos/uso-de-js/img/uso-de-DOM.png'
-};
