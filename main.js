@@ -41,3 +41,11 @@ mat.addEventListener('click', function () {
       n2 = Number.parseInt(window.prompt("Digite o segundo número entre 1 e 10: "));
     */
 });
+
+// Ínicio do módulo C
+
+function exibirExemplo() {
+    const img = document.getElementsByTagName('img')[0];
+
+    img.src = 'https://github.com/DevMuriloSantos/uso-de-js/img/uso-de-DOM.png'
+};

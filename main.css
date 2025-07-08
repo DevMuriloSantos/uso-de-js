@@ -89,11 +89,16 @@ div {
     color: white;
 }
 
+.div_maior {
+    width: 336px;
+}
+
 .header {
     background-color: #2F2F2F;
     color: white;
     text-align: start;
     padding: 5px;
+    margin-bottom: 0;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -104,6 +109,10 @@ div {
     padding: 5px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+}
+
+img {
+    width: 100%;
 }
 
 

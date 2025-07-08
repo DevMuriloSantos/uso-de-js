@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+</head>
+<style>
+    body {
+        background-color: rgb(68, 125, 199);
+        color: white;
+        font: normal 18pt Arial;
+    }
+</style>
+
+<body>
+    <h1>Teste de DOM (Document Object Model)</h1>
+
+    <p>Teste</p>
+    <p>Este é um teste para verificar o funcionamento do <strong>DOM</strong>.</p>
+
+    <button onclick="bg()">Clique em mim</button>
+
+    <button onclick="mudarCor()">Mudar a Cor do primeiro parágrafo</button>
+</body>
+<script>
+    let p1 = document.getElementsByTagName('p')[0]; // Seleciona o primeiro parágrafo
+    window.document.write(`Está escrito assim: ${p1.innerHTML}`); /* Escreve o conteúdo do parágrafo no documento*/
+
+    function mudarCor() {
+        p1.style.color = 'red'; // Muda a cor do texto do primeiro parágrafo para vermelho
+    }
+
+    function bg() {
+        document.body.style.backgroundColor = 'black'; /* Muda a cor de fundo do corpo do documento para preto */
+    }
+</script>
+</html>

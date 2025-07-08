@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Módulo C</title>
+</head>
+
+<body>
+    <main>
+        <h1>Módulo C</h1>
+
+        <h1>O que é DOM?</h1>
+        <p><strong>DOM</strong> significa Document Object Model (<strong>Modelo de Objeto do Documento</strong>). Ele é a representação em árvore de toda a estrutura HTML da página, onde cada tag vira um objeto que você pode acessar e manipular com JavaScript.</p>
+
+        <button onclick="exibirExemplo()">Clique aqui para ver o exemplo</button>
+        
+        <p>Esse exemplo usa o DOM para pegar o elemento h1 pelo id e mudar o texto quando o botão é clicado.</p>
+
+        <h2>Métodos comuns do DOM</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Método</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>getElementById</td>
+                    <td>Retorna o elemento que possui o ID especificado.</td>
+                </tr>
+                <tr>
+                    <td>getElementsByClassName</td>
+                    <td>Retorna uma coleção de elementos que possuem a classe especificada.</td>
+                </tr>
+                <tr>
+                    <td>getElementsByTagName</td>
+                    <td>Retorna uma coleção de elementos que possuem a tag especificada.</td>
+                </tr>
+                <tr>
+                    <td>querySelector</td>
+                    <td>Retorna o primeiro elemento que corresponde ao seletor CSS especificado.</td>
+                </tr>
+                <tr>
+                    <td>document.querySelectorAll()</td>
+                    <td>Seleciona todos que batem com o seletor</td>
+                </tr>
+                <tr>
+                    <td>document.createElement()</td>
+                    <td>Cria um novo elemento</td>
+                </tr>
+                <tr>
+                    <td>element.innerText</td>
+                    <td>Lê ou altera o texto de um elemento</td>
+                </tr>
+                <tr>
+                    <td>element.innerHTML</td>
+                    <td>Lê ou altera o HTML interno</td>
+                </tr>
+                <tr>
+                    <td>element.style</td>
+                    <td>Altera estilos CSS diretamente via JS</td>
+                </tr>
+                <tr>
+                    <td>element.classList</td>
+                    <td>Manipula as classes CSS de um elemento</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
