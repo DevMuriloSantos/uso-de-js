@@ -205,6 +205,10 @@ table>tbody>tr>td {
     animation: rotate 2s normal infinite;
 }
 
+button {
+    margin-top: 10px;
+}
+
 @keyframes rotate {
     from {
         rotate: 0deg;

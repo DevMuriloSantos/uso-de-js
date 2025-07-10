@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+
+<style>
+    body,
+    input {
+        font: normal 18pt Arial;
+    }
+
+    input {
+        width: 100px;
+    }
+</style>
+
+<body>
+    <h1>Somando valores</h1>
+
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <form action="">
+        <input type="text" name="idade" id="idade" placeholder="Digite sua idade">
+        <input type="text" name="habilitacao" id="habilitacao" placeholder="Você tem CNH ?">
+
+        <input type="submit" value="enviar" onclick="verificar()">
+    </form>
+</body>
+
+<script>
+    const historico = document.getElementById('delete');
+    function somar() {
+        let n1 = Number(document.getElementById('txtn1').value);
+        let n2 = Number(document.getElementById('txtn2').value);
+        let resultado = n1 + n2;
+
+        document.body.innerHTML += `<p>O resultado da soma é: ${resultado}</p>`;
+        // Alternativa: document.write(`O resultado da soma é: ${resultado}`);
+    }
+
+    const idade = document.getElementById('idade').value;
+    const habilitacao = document.getElementById('habilitacao').value;
+
+    function verificar() {
+        if (idade >= 18 && habilitacao.toLowerCase() == 'sim') {
+            alert('Você pode dirigir!')
+        }else {
+            alert('Você não pode dirigir!')
+        }
+    }
+</script>
+
+</html>
