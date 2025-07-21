@@ -1,0 +1,53 @@
+body {
+    color: white;
+    background-color: #752f8f;
+    text-align: center;
+    font: normal 18pt Arial;
+}
+
+header {
+    margin-top: 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+
+    color: black;
+    background-color: white;
+    width: 500px;
+    text-align: left !important;
+}
+
+form {
+    margin: 10px;
+}
+
+img {
+    display: none;
+    margin: auto;
+
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+}
+
+#aviso {
+    text-align: center;
+    font-size: medium;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 380px;
+    }
+}

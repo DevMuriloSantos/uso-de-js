@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modelo-2.css">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <form action="">
+                <p>Ano de nascimento:
+                    <input type="number" name="ano" id="an" placeholder="ex: 2009"><br>
+                </p>
+
+                <p>
+                    Sexo:
+                    <input type="radio" name="sexo" id="masculino" value="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="feminino" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </p>
+
+                <input id="submit" type="submit" value="Verificar" >
+            </form>
+        </div>
+        <div>
+            <p id="resultado">Preencha os dados acima para ver o resultado!</p>
+            <img id="foto" src="" alt="">
+        </div>
+    </section>
+
+    <footer> © Dev Murilo Santos</footer>
+</body>
+
+<script src="modelo-2.js"></script>
+</html>

@@ -183,6 +183,113 @@
 
         <h1>Estruturas condicionais</h1>
         <p>As estruturas condicionais em JavaScript servem para executar diferentes blocos de código dependendo de determinadas condições. Elas são fundamentais para qualquer lógica de programação. Aqui estão as principais:</p>
+
+        <button><a href="Estruturas_Condicionais_JS.pdf">Clique aqui para ver mais detalhes</a></button>
+
+        <h1>Métodos de Data e Hora do JS</h1>
+
+        <h2>Métodos de Data (comuns)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td> Método </td>
+                    <td> Retorno </td>
+                    <td> Exemplo </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> getDate() </td>
+                    <td> Retorna o dia do mês (1-31) </td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td> getMonth() </td>
+                    <td> Retorna o mês (0-11) => 0 = Janeiro, 11 = Dezembro</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td> getFullYear() </td>
+                    <td> Retorna o ano (4 dígitos) </td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>getDay()</td>
+                    <td> Retorna o dia da semana (0-6) => 0 = Domingo, 6 = Sábado</td>
+                    <td>3 para quarta-feira</td>
+                </tr>
+                <tr>
+                    <td>getTime()</td>
+                    <td>Retorna o timestamp (milissegundos desde 1 de janeiro de 1970)</td>
+                    <td>1680000000000</td>
+                </tr>
+                <tr>
+                    <td>getTimezoneOffset()</td>
+                    <td>Retorna a diferença, em minutos, entre a hora local e a hora UTC</td>
+                    <td>-180 para GMT-3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Métodos de Hora</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td> Método </td>
+                    <td> Retorno </td>
+                    <td> Exemplo </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> getHours() </td>
+                    <td> Retorna a hora (0-23) </td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td> getMinutes() </td>
+                    <td> Retorna os minutos (0-59) </td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td> getSeconds() </td>
+                    <td> Retorna os segundos (0-59) </td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td> getMilliseconds() </td>
+                    <td> Retorna os milissegundos (0-999) </td>
+                    <td>500</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button><a href="Guia_Data_Hora_JS_Explicado.pdf">Clique aqui para ver o guia completo</a></button>
+
+        <h1>Estrutura condicional múltipla</h1>
+        <h2>O que é switch ?</h2>
+        <p>O <code>switch</code> é uma estrutura condicional múltipla que substitui várias instruções if else if quando todas as condições dependem de comparações iguais (===). É importante lembrar que essa estrutura só funciona com números inteiros e strings.</p>
+
+        <h2>Sintaxe básica</h2>
+        <img src="img/sintaxe-basica.png" alt="">
+
+        <h2>Exemplo de uso</h2>
+        <img src="img/exemplo-de-uso.png" alt="">
+
+        <h1>Porque usar o break? (seu uso é obrigatório)</h1>
+        <p>Sem break, o JavaScript continua executando os próximos blocos mesmo que um case tenha sido satisfeito. Isso se chama "fall-through".</p>
+
+        <h1>Método setAttribute</h1>
+        <p>O método <code>setAttribute</code> em JavaScript serve para adicionar ou alterar um atributo de um elemento HTML diretamente no DOM.</p>
+
+        <h2>Sintaxe: </h2>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                element.<span class="corVermelho">setAttribute</span>(nomeDoAtributo, valorDoAtributo);
+            </p>
+        </div>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
