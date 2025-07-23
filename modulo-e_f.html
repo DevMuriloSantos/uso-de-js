@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Módulo E e F</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="bi bi-journal-code"></i>Meu
+                            desenvolvimento JS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="main.html"><i
+                                        class="bi bi-filetype-js"></i>Módulo A e B</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-c_d.html"><i class="bi bi-code-slash"></i>Módulo C e
+                                    D</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-e_f.html"><i class="bi bi-code-slash"></i>Módulo E e
+                                    F</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Módulo E e F</h1>
+
+        <h1>Estruturas de repetição no JavaScript</h1>
+
+        <h2>O que são estruturas de repetição no JavaScript ?</h2>
+        <p>São formas de executar um bloco de código várias vezes, enquanto uma condição for verdadeira ou enquanto houver elementos para percorrer. Isso evita escrever o mesmo código repetidamente.</p>
+
+        <h2>Pricipais estruturas de repetição no JS</h2>
+
+        <h2>1.for</h2>
+        <p>Usado quando você sabe exatamente quantas vezes quer repetir.</p>
+
+        <h2>2.while</h2>
+        <p>Usado quando você não sabe quantas vezes vai repetir, apenas enquanto a condição for verdadeira.</p>
+
+        <h2>3.do...while</h2>
+        <p>Parecido com o <code>while</code>, mas a diferença é que ele executa pelo menos uma vez, mesmo que a condição seja falsa logo no início.</p>
+
+        <h2>4.for...of</h2>
+        <p>Usado para percorrer valores de arrays ou objetos iteráveis.</p>
+
+        <h2>5.for...in</h2>
+        <p>Usado para percorrer as chaves (índices ou propriedades) de um objeto ou array.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Estrutura</td>
+                    <td>Quando usar?</td>
+                    <td>Exemplo prático</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>for</td>
+                    <td>Quando sabe quantas repetições</td>
+                    <td>Contar de 1 a 10</td>
+                </tr>
+                <tr>
+                    <td>while</td>
+                    <td>Quando depende de uma condição</td>
+                    <td>Esperar um botão ser clicado</td>
+                </tr>
+                <tr>
+                    <td>do...while</td>
+                    <td>Quando precisa executar pelo menos uma vez</td>
+                    <td>Menu interativo</td>
+                </tr>
+                <tr>
+                    <td>for...of</td>
+                    <td>Percorrer valores em array</td>
+                    <td>Lista de nomes</td>
+                </tr>
+                <tr>
+                    <td>for...in</td>
+                    <td>Percorrer propriedades de objetos</td>
+                    <td>Acessar atributos de um objeto</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Dica</h2>
+        <p>Sempre tenha cuidado com loops infinitos! Exemplo de um erro clássico:</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">let</span> i = <span class="corRosa">0</span>;
+                <span class="corAzul">while</span> (i < <span class="corRosa">5</span>) { <br>
+                    <span class="corRosa">console</span>.<span class="corVermelho">log</span>(i);
+                    <span class="corCinza"> <br> // Esquecer de fazer i++</span> <br>
+                }
+            </p>
+        </div>
+
+        <p>Isso nunca para de rodar travando o seu código.</p>
+        <button><a href="estruturas_repeticao_js.pdf">Clique aqui para mais detalhes</a></button>
+
+        <h2>Diferença entre estrutura de condição e de repetição</h2>
+        <p>Na estrutura de condição, você testa uma condição e executa um bloco de código apenas uma vez, se essa condição for verdadeira. Já a estrutura de repetição, serve para repetir um bloco de código várias vezes, enquanto uma condição for verdadeira ou enquanto tiver elementos para percorrer.</p>
+
+        <h2>Diferença entre a estrutura while e do while</h2>
+        <p>a estrutura <code>while</code>, verifica a condição antes de executar o bloco, ou seja, se a condição for falsa logo no início, o bloco nunca será executado. Já a estrutura <code>do while</code>, executa o bloco pelo menos uma vez, depois verifica a condição, ou seja, mesmo que a condição seja falsa, o programa roda o bloco pelo menos uma vez antes de checar.</p>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
