@@ -31,10 +31,10 @@ contar.addEventListener("click", function (event) {
 
     for (let i = inicio; i <= fim; i += passo) {
         if (i + passo >= fim) {
-            msg.innerHTML += `${i} - fim`
+            msg.innerHTML += `${i} 👉🏳️`
             return
         }
 
-        msg.innerHTML += `${i}, `
+        msg.innerHTML += `${i} 👉 `
     }
 });
