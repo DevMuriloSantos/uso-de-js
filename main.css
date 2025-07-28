@@ -192,11 +192,11 @@ table>tbody>tr>td {
     color: white;
 }
 
-.nav-link:hover {
-    color: rgb(148, 144, 144);
+.nav-link:hover, .nav-link.show, .navbar-nav {
+    color: rgb(148, 144, 144) !important;
 }
 
-.bi-journal-code, .bi-filetype-js, .bi-code-slash {
+.bi-journal-code, .bi-filetype-js, .bi-code-slash, .bi-body-text, .bi-folder2 {
     font-size: 20pt;
     margin-right: 8px;
     color: #66C0F0;

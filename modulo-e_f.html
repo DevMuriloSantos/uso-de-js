@@ -41,6 +41,23 @@
                                 <a class="nav-link" href="modulo-e_f.html"><i class="bi bi-code-slash"></i>Módulo E e
                                     F</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-body-text"></i> Exercicios JS
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-001/modelo-1.html"><i class="bi bi-folder2"></i> Ex-001</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-002/modelo-2.html"><i class="bi bi-folder2"></i> Ex-002</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-003/modelo-3.html"><i class="bi bi-folder2"></i> Ex-003</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-004/modelo-4.html"><i class="bi bi-folder2"></i> Ex-004</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-005/modelo-5.html"><i class="bi bi-folder2"></i> Ex-005</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/DevMuriloSantos">by Dev Murilo Santos</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -206,6 +223,36 @@
 
         <p>Aqui pessoa é uma variável composta com várias informações organizadas.</p>
 
+        <h3>Objetos dentro de objetos</h3>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">const</span> usuario = { <br>
+                <span class="corRosa">nome</span>: "Carlos", <br>
+                <span class="corRosa">endereco</span>: { <br>
+                <span class="corRosa">rua</span>: "Rua A", <br>
+                <span class="corRosa">numero</span>: 100 <br>
+                } <br>
+                }; <br>
+
+                <span class="corRosa">console</span>.<span class="corRosa">log</span>(usuario.endereco.rua); <span
+                    class="corCinza">// Rua A</span>
+            </p>
+        </div>
+
+        <h3>Verificando propriedades de objetos</h3>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corVerde">"nome"</span> <span class="corAzul">in</span> pessoa; <span class="corCinza">//
+                    true</span> <br>
+                pessoa.<span class="corVermelho">hasOwnProperty</span>(<span class="corVerde">"idade"</span>); <span
+                    class="corCinza">// true</span>
+            </p>
+        </div>
+
+        <button><a href="Objetos_em_JavaScript.pdf">Clique aqui para mais detalhes</a></button>
+
         <h1>Adicionando mais valores a um array</h1>
         <p>No JavaScript, existem várias formas de adicionar mais valores a um array já existente.</p>
 
@@ -344,7 +391,8 @@
 
         <h3>Número de parâmetros diferente do número de argumentos</h3>
         <p>No JavaScript, se você chamar a função com menos argumentos, os parâmetros restantes ficam como
-            <code>undefined</code>:</p>
+            <code>undefined</code>:
+        </p>
 
         <div>
             <p class="header">JavaScript</p>
@@ -357,7 +405,8 @@
             </p>
         </div>
 
-        <p>Se você chamar com mais argumentos do que parâmetros, os extras são ignorados (mas você pode acessá-los via arguments ou operador rest):</p>
+        <p>Se você chamar com mais argumentos do que parâmetros, os extras são ignorados (mas você pode acessá-los via
+            arguments ou operador rest):</p>
 
         <div>
             <p class="header">JavaScript</p>
@@ -366,7 +415,7 @@
                 <span class="corCinza">// a = 1, b = 2 (3 e 4 são ignorados diretamente)</span>
             </p>
         </div>
-        
+
         <button><a href="parametros_funcoes_js.pdf">Acesse o pdf para mais informações</a></button>
     </main>
 </body>

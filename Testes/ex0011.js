@@ -9,3 +9,5 @@ if (horaAtual < 12) {
 } else {
     console.log('Boa noite!');
 }
+
+const teste = {nome : 'Murilo', idade: 15} // object

@@ -45,7 +45,6 @@ add.addEventListener('click', function (event) {
 
     document.getElementById('numero').value = ''; // limpa o campo
     p.innerHTML = ''
-
 });
 
 atualizar.addEventListener('click', (event) => { // forma diferente de declarar
