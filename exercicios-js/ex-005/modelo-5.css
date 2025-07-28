@@ -41,6 +41,14 @@ input {
     margin: 6px;
 }
 
+select {
+    width: 150px;
+}
+
+.msg {
+    width: 360px;
+}
+
 footer {
     margin-top: 10px;
     font-style: italic;
