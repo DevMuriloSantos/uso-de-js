@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Estudos avançados</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="bi bi-journal-code"></i>Meu
+                            desenvolvimento JS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="main.html"><i
+                                        class="bi bi-filetype-js"></i>Módulo A e B</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-c_d.html"><i class="bi bi-code-slash"></i>Módulo C e
+                                    D</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-e_f.html"><i class="bi bi-code-slash"></i>Módulo E e
+                                    F</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="estudos-avancados.html"><i class="bi bi-journal-album"></i>Estudos avançados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-body-text"></i> Exercicios JS
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-001/modelo-1.html"><i
+                                                class="bi bi-folder2"></i> Ex-001</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-002/modelo-2.html"><i
+                                                class="bi bi-folder2"></i> Ex-002</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-003/modelo-3.html"><i
+                                                class="bi bi-folder2"></i> Ex-003</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-004/modelo-4.html"><i
+                                                class="bi bi-folder2"></i> Ex-004</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-005/modelo-5.html"><i
+                                                class="bi bi-folder2"></i> Ex-005</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/DevMuriloSantos">by Dev Murilo Santos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>O que é o Event loop no Node.js?</h1>
+        <p>O event loop é o que permite ao Node.js executar código não bloqueante — ou seja, continuar rodando enquanto
+            espera por eventos como respostas de rede, tempo de espera (<code>setTimeout</code>) ou leitura de arquivos.
+        </p>
+        <p>Node.js é single-threaded, mas graças ao event loop e à libuv (uma biblioteca em C usada internamente), ele
+            consegue lidar com operações assíncronas eficientemente.</p>
+
+        <h2>Fases do Event loop</h2>
+        <p>O loop é dividido em várias fases principais, cada uma com sua fila de callbacks:</p>
+
+        <ol>
+            <li>Timers - Executa callbacks agendados por setTimeout() e setInterval().</li>
+            <li>Pending Callbacks - Executa callbacks de operações I/O que foram adiadas.</li>
+            <li>Idle, Prepare - Usado internamente pelo Node (você geralmente não lida com isso diretamente).</li>
+            <li>Poll - Aguarda por novas conexões, dados, etc. Se houver callbacks pendentes, executa-os.</li>
+            <li>Check - Executa callbacks agendados com setImmediate().</li>
+            <li>Close Callbacks
+                Executa callbacks de encerramento, como socket.on('close').</li>
+        </ol>
+
+        <h1>O que é callback?</h1>
+        <p>Em programação, um callback é uma função passada como argumento para outra função, que é então chamada
+            posteriormente dentro da função externa. Em termos mais simples, é como entregar um bilhete para alguém
+            dizendo: "Por favor, me ligue quando terminar de fazer isso". A função original faz algo e, ao terminar,
+            "chama de volta" a função que você passou como argumento.</p>
+
+        <h2>Exemplo:</h2>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">function</span> <span class="corVermelho">saudacao</span>(nome) { <br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(<span class="corVerde">"Olá,
+                    "</span> + nome + <span class="corVerde">"!"</span>); <br>
+                } <br>
+
+                <span class="corAzul">function</span> <span class="corVermelho">processarUsuario</span>(callback) { <br>
+                <span class="corAzul">const</span> nome = <span class="corVerde">"Murilo"</span>; <br>
+                <span class="corVermelho">callback</span>(nome); <span class="corCinza">// Executa a função saudacao com
+                    o nome como argumento</span> <br>
+                } <br>
+
+                <span class="corVermelho">processarUsuario</span>(saudacao);
+            </p>
+        </div>
+
+        <p>Saída:</p>
+
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">Olá, Murilo!</p>
+        </div>
+
+        <h1>O que é <span class="corVerde">HTTP</span>?</h1>
+        <p>O HTTP (Hypertext Transfer Protocol ou Protocolo de Transferência de Hipertexto em português) é um protocolo
+            de comunicação. E um protocolo que especifica como será a comunicação entre um navegador e um servidor web.
+            Request e Response. E através dele o cliente e o servidor conseguem se comunicar, seguindo um conjunto de
+            regras bem definidos (por isso chamamos de protocolo).</p>
+        <p>Por exemplo, se estivermos falando de uma aplicação web, o cliente é o navegador, ele envia um pedido para o
+            servidor web usando o pratocalo HTTP, com base nesse pedido, se tudo estiver correto, o servidor responde
+            também usando o mesmo protocolo o conteúdo solicitado.</p>
+
+        <h2><span class="corVerde">REQUEST</span></h2>
+        <p>A Request ou requisição traduzindo diretamente para português, é o pedido que um cliente realiza a nosso
+            servidor. Esse pedido contém uma série de dados que são usados para descrever exatamente o que o cliente
+            precisa.</p>
+        <p>No navegador toda vez que trocamos de página ou apertamos enter na barra de endereço uma nova request é
+            feita.</p>
+
+        <h2><span class="corVerde">RESPONSE</span></h2>
+        <p>Vimos que o cliente envia uma Request (requisição) ao servidor. Essa requisição possui todas as informações
+            do que a cliente espera receber de volta.</p>
+        <p>O servidor web ao receber essas informações precisa enviar uma resposta ao cliente, nesse ponto entra a
+            Response. A Response (resposta) nada mais é do que a resposta que o servidor envia ao cliente.</p>
+        <p>Essa resposta pode conter os dados que realmente o cliente esperava receber ou uma resposta informando que
+            alguma coisa deu errado.</p>
+
+        <h2>Verbos <span class="corVerde">HTTP</span></h2>
+        <p>Os verbos HTTP (também chamados de métodos HTTP) definem a ação que o cliente deseja realizar sobre um
+            recurso (como uma página, um dado ou um arquivo) no servidor.</p>
+        <p><span class="corVerde">-GET</span> - ler dados - Buscar uma página ou informação</p>
+        <p><span class="corVerde">-POST</span> - criar algo novo - Enviar formulário, cadastrar usuário</p>
+        <p><span class="corVerde">-PUT</span> - atualizar um recurso por completo - Substituir dados existentes</p>
+        <p><span class="corVerde">-DELETE</span> - excluir um recurso - Remover item de um banco de dados</p>
+        <p><span class="corVerde">-PATCH</span> - atualizar parcialmente - Atualizar só parte de um recurso</p>
+
+        <h1>O que são <span class="corVerde">Query</span> Params</h1>
+        <p>Query Params (ou parâmetros de consulta) são valores passados na URL para enviar informações ao servidor em
+            uma requisição GET (e em outras, se necessário).</p>
+        <p>Eles vêm após o ? na URL e seguem o formato: <span class="corRosa">chave</span> = valor</p>
+
+        <p>Exemplo de url com Query Params:</p>
+        <p>https:<span class="corCinza">//site.com/produtos?categoria=roupas&tamanho=M&ordenar=preco</span></p>
+        <p>Aqui temos 3 query params:</p>
+        <ul>
+            <li>categoria = roupas</li>
+            <li>tamanho = M</li>
+            <li>ordenar = preco</li>
+        </ul>
+
+        <h2>Sintaxe:</h2>
+        <ul>
+            <li>Começa com ?</li>
+            <li>Cada par chave = valor</li>
+            <li>Parâmetros múltiplos são separados por &</li>
+        </ul>
+
+        <h2>Exemplo com JavaScript</h2>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">const</span> url = <span class="corAzul">new</span> <span
+                    class="corVermelho">URL</span>(<span
+                    class="corVerde">"https://site.com/produtos?categoria=camisa&cor=azul"</span>); <br>
+
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(url.searchParams.<span
+                    class="corVermelho">get</span>(<br><span class="corVerde">"categoria"</span>)); <span
+                    class="corCinza">// camisa</span> <br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(url.searchParams.<span
+                    class="corVermelho">get</span>(<br><span class="corVerde">"cor"</span>)); <span class="corCinza">//
+                    azul</span>
+            </p>
+        </div>
+
+        <h2>Query Params</h2>
+        <p>Query params = ?<span class="corVermelho">teste</span> = 1</p>
+        <p>http://api.com/celulares?<span class="corVermelho">name</span>=<span class="corVerde">sansumg</span><span
+                class="corAmarelo">&</span><span class="corVermelho">preco</span>=<span class="corVerde">2000</span></p>
+
+        <h1>O que são <span class="corVerde">Route</span> Params (Parâmetros de Rota)?</h1>
+        <p>Route Params (ou parâmetros de rota) são valores dinâmicos inseridos diretamente na URL, como parte do
+            caminho da rota, e não depois do ? como os query params.</p>
+        <p>São muito usados para identificar recursos específicos, como um ID de usuário, produto ou postagem.</p>
+
+        <h2><span class="corVerde">Route</span> Params</h2>
+        <p>Route params = /users/:<span class="corAmarelo">id</span></p>
+        <p>GET - http://api.com/movies/1</p>
+        <p>DELETE - http://api.com/movies/1</p>
+        <p>PUT - http://api.com/movies/1</p>
+
+        <h1> O que são <span class="corVerde">Body</span> Params?</h1>
+        <p>Body Params (ou parâmetros do corpo) são dados enviados dentro do corpo da requisição HTTP, normalmente
+            usados em métodos como POST, PUT ou PATCH — ou seja, quando o cliente envia dados ao servidor (em vez de
+            apenas pedir algo).</p>
+
+        <h1>Quando usar Body Params?</h1>
+        <p>Quando você quer enviar dados complexos ou sensíveis (como senhas, formulários, JSON), geralmente em requisições que modificam dados no servidor.</p>
+
+        <h2>Exemplo real (JSON no corpo da requisição)</h2>
+        <p>Requisição:</p>
+
+        <div>
+            <p class="header">http</p>
+            <p class="body">
+                POST /usuarios <br>
+                Content-Type: application/json <br>
+
+                { <br>
+                "name": "Murilo", <br>
+                "email": "user@email.com", <br>
+                "password": "123456" <br>
+                } <br>
+                (
+                    {<br>
+                        method: 'post', <br>
+                        url: 'http://servidor.com/user/12345', <br>
+                        data: { <br>
+                            "name": "Murilo", <br>
+                            "email": "user@gmail.com", <br>
+                            "password": "123456" <br>
+                        } <br>
+                    }
+                );
+            </p>
+        </div>
+
+        <h1>Códigos de Status HTTP</h1>
+        <p>Os códigos de status HTTP são respostas do servidor indicando o resultado de uma requisição feita pelo cliente (navegador, app, etc.).</p>
+        <p>Eles são sempre um número de 3 dígitos e fazem parte da resposta HTTP.</p>
+
+        <h2>Grupos principais:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Faixa</td>
+                    <td>Significado</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1xx</td>
+                    <td>🔄 Informativos</td>
+                </tr>
+                <tr>
+                    <td>2xx</td>
+                    <td>✅ Sucesso</td>
+                </tr>
+                <tr>
+                    <td>3xx</td>
+                    <td>🔀 Redirecionamento</td>
+                </tr>
+                <tr>
+                    <td>4xx</td>
+                    <td>❌ Erro do cliente</td>
+                </tr>
+                <tr>
+                    <td>5xx</td>
+                    <td>💥 Erro do servidor</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Código 1xx - Informativos (menos comuns)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Significado</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100 Continue</td>
+                    <td>O cliente pode continuar a requisição</td>
+                </tr>
+                <tr>
+                    <td>101 Switching Protocols</td>
+                    <td>O protocolo está sendo alterado (ex: para WebSocket)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Código 2xx - Sucesso</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>200 OK</td>
+                    <td>Requisição bem-sucedida</td>
+                </tr>
+                <tr>
+                    <td>201 Created</td>
+                    <td>Recurso criado com sucesso</td>
+                </tr>
+                <tr>
+                    <td>204 No Content</td>
+                    <td>Requisição processada, mas sem resposta</td>
+                </tr>
+            </thead>
+        </table>
+
+        <h2>Código 3xx - Redirecionamento</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Significado</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>301 Moved Permanently</td>
+                    <td>URL mudou para sempre</td>
+                </tr>
+                <tr>
+                    <td>302 Found</td>
+                    <td>Redirecionamento temporário</td>
+                </tr>
+                <tr>
+                    <td>304 Not Modified</td>
+                    <td>Conteúdo não mudou desde a última requisição (cache)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Códigos 4xx - Erro do cliente</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Significado</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>400 Bad Request</td>
+                    <td>Requisição malformada</td>
+                </tr>
+                <tr>
+                    <td>401 Unauthorized</td>
+                    <td>Requer autenticação</td>
+                </tr>
+                <tr>
+                    <td>403 Forbidden</td>
+                    <td>Acesso negado</td>
+                </tr>
+                <tr>
+                    <td>404 Not Found</td>
+                    <td>Recurso não encontrado</td>
+                </tr>
+                <tr>
+                    <td>405 Method Not Allowed</td>
+                    <td>Método HTTP não permitido</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Códigos 5xx - Erros do servidor</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Significado</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>500 Internal Server Error</td>
+                    <td>Erro interno do servidor</td>
+                </tr>
+                <tr>
+                    <td>501 Not Implemented</td>
+                    <td>Funcionalidade não implementada</td>
+                </tr>
+                <tr>
+                    <td>502 Bad Gateway</td>
+                    <td>Resposta inválida de outro servidor</td>
+                </tr>
+                <tr>
+                    <td>503 Service Unavailable</td>
+                    <td>Servidor fora do ar ou sobrecarregado</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>🔐 O que é o <span class="corVerde">HTTPS</span>?</h1>
+        <p>HTTPS significa HyperText Transfer Protocol Secure — é a versão segura do HTTP, usada para transferir dados com criptografia entre o navegador e o servidor.</p>
+        <p> HTTPS = HTTP + SSL/TLS</p>
+
+        <h2>Para que serve?</h2>
+        <p>HTTPS protege os dados que trafegam entre o usuário e o site, garantindo:</p>
+        <ul>
+            <li>🔒 Privacidade: ninguém "espia" os dados enviados (como senhas, cartões).</li>
+            <li>📦 Integridade: os dados não são alterados durante o caminho.</li>
+            <li>✅ Autenticidade: você está se conectando ao site real, não a um falso.</li>
+        </ul>
+
+        <h2>O que é o crtificado SSL/TLS</h2>
+        <p>É um "documento digital" que prova que o site é autêntico e permite a troca segura de dados. Pode ser emitido por autoridades como Let’s Encrypt, Sectigo, etc.</p>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -196,7 +196,7 @@ table>tbody>tr>td {
     color: rgb(148, 144, 144) !important;
 }
 
-.bi-journal-code, .bi-filetype-js, .bi-code-slash, .bi-body-text, .bi-folder2 {
+.bi-journal-code, .bi-filetype-js, .bi-code-slash, .bi-body-text, .bi-folder2, .bi-journal-album {
     font-size: 20pt;
     margin-right: 8px;
     color: #66C0F0;
