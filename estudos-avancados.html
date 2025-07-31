@@ -421,6 +421,49 @@
 
         <h2>O que é o crtificado SSL/TLS</h2>
         <p>É um "documento digital" que prova que o site é autêntico e permite a troca segura de dados. Pode ser emitido por autoridades como Let’s Encrypt, Sectigo, etc.</p>
+
+        <h1>O que é e para que serve o <span class="corRosa">package.json</span>?</h1>
+        <p>O arquivo <code>package.json</code> é o coração de qualquer projeto Node.js. Ele descreve o projeto e gerencia suas dependências, scripts, versão, entre outras configurações.</p>
+        <img src="img/json.png" alt="">
+
+        <h2>Exemplo de uso prático:</h2>
+
+        <div>
+            <p class="header">cmd</p>
+            <p class="body">
+                npm install express
+            </p>
+        </div>
+
+        <p>Isso adiciona o Express à lista de <code>dependencies</code> no package.json.</p>
+
+        <h1>Importando bibliotecas no Node.js (usando require ou import)</h1>
+
+        <h2>✅ Usando require (CommonJS - padrão mais antigo, ainda muito usado):</h2>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">const</span> express = <span class="corAmarelo">require</span>(<span class="corVerde">'express'</span>); <br>
+                <span class="corAzul">const</span> fs = <span class="corAmarelo">require</span>(<span class="corVerde">'fs'</span>);
+            </p>
+        </div>
+        <p>Esse formato é padrão em versões antigas do Node.js e projetos que usam CommonJS.</p>
+
+        <h2>✅ Usando import (ESModules - padrão moderno):</h2>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">import</span> express <span class="corAzul">from</span> <span class="corVerde">'express'</span>; <br>
+                <span class="corAzul">import</span> fs <span class="corAzul">from</span> <span class="corVerde">'fs'</span>;
+            </p>
+        </div>
+        <p>🔧 Para usar import, o seu package.json precisa ter:</p>
+        <div>
+            <p class="header">json</p>
+            <p class="body">
+                <span class="corRosa">"type"</span>: <span class="corVerde">"module"</span>
+            </p>
+        </div>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
