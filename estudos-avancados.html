@@ -464,6 +464,71 @@
                 <span class="corRosa">"type"</span>: <span class="corVerde">"module"</span>
             </p>
         </div>
+
+        <h1>JSON</h1>
+        <p>JSON (JavaScript Object Notation) é um formato leve para armazenar e transportar dados. É muito usado para trocar informações entre cliente e servidor em aplicações web.</p>
+
+        <h2>Estrutura básica do JSON</h2>
+        <img src="img/json1.png" alt="">
+
+        <h2>Regras do JSON</h2>
+        <ul>
+            <li>É sempre composto por pares chave-valor.</li>
+            <li>A chave deve estar entre aspas duplas " ".</li>
+            <li>Os valores podem ser:
+                <ul>
+                    <li>string ("texto")</li>
+                    <li>número (123)</li>
+                    <li>boolean (true / false)</li>
+                    <li>array ([ ])</li>
+                    <li>objeto ({ })</li>
+                    <li>null</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1>Find e findIndex</h1>
+        <p>Ambos são usados para localizar elementos em arrays, mas com diferenças importantes.</p>
+
+        <h2>find()</h2>
+        <p>Retorna o primeiro elemento do array que satisfaz uma condição. Se nenhum elemento for encontrado, retorna undefined.</p>
+
+        <h3>Exemplo: </h3>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">const</span> numeros = [<span class="corRosa">10, 20, 30, 40</span>]; <br>
+                
+                <span class="corAzul">const</span> resultado = numeros.<span class="corVermelho">find</span>(num => num > <span class="corRosa">25</span>); <br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(resultado); <span class="corCinza">// 30</span>
+            </p>
+        </div>
+
+        <h2>findIndex()</h2>
+        <p>Retorna o índice do primeiro elemento que satisfaz a condição. Se nenhum for encontrado, retorna -1.</p>
+
+        <h3>Exemplo: </h3>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">const</span> numeros = [<span class="corRosa">10, 20, 30, 40</span>]; <br>
+                
+                <span class="corAzul">const</span> indice = numeros.<span class="corVermelho">findIndex</span>(num => num > <span class="corRosa">25</span>); <br>
+                <span class="corRosa">console</span>.<span class="corVermelho">log</span>(indice); <span class="corCinza">// 2</span>
+            </p>
+        </div>
+
+        <h1>O que é um Middleware?</h1>
+        <p>Um middleware é uma função que intercepta e processa uma requisição antes que ela chegue na rota final ou antes de enviar a resposta.</p>
+        <p>Ele pode:</p>
+        <ul>
+            <li>Modificar a req ou a res</li>
+            <li>Interromper o fluxo da requisição</li>
+            <li>Continuar para o próximo middleware com next()</li>
+        </ul>
+
+        <h2>Exemplo de Middleware de autenticação</h2>
+        <img src="img/middleware.png" alt="">
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
