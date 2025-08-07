@@ -231,6 +231,95 @@
                 }
             </p>
         </div>
+
+        <h1>Tratamento de erros</h1>
+        <p>Em JavaScript, o tratamento de erros é feito principalmente com os blocos try, catch, finally e a instrução throw. Eles são usados para lidar com exceções (erros) que ocorrem durante a execução do código, permitindo que você evite que o programa pare abruptamente, em outras palavras evita que o programa quebre.</p>
+
+        <h2>Sintaxe básica</h2>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corAzul">try</span> { <br>
+                <span class="corCinza">// Código que pode gerar um erro</span> <br>
+                } <span class="corAzul">catch</span> (<span class="corRosa">error</span>) { <br>
+                <span class="corCinza">// Código para lidar com o erro</span> <br>
+                } <span class="corAzul">finally</span> { <br>
+                <span class="corCinza">// Código que sempre será executado, independentemente de erro (opcional)</span> <br>
+                }
+            </p>
+        </div>
+
+        <h2>Exemplo</h2>
+        <img src="img/try_catch.png" alt="">
+
+        <h2>Saída:</h2>
+        <div>
+            <p class="header">JavaScript</p>
+            <p class="body">
+                <span class="corRosa">Resultado: </span><span class="corVerde">Infinity</span> <br>
+                <span class="corRosa">Erro capturado: </span><span class="corVerde">Algo deu errado!</span> <br>
+                <span class="corVerde">Finalizado.</span>
+            </p>
+        </div>
+
+        <h2>Explicação</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Parte</td>
+                    <td>Descrição</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>try</td>
+                    <td>Bloco onde você coloca o código que pode gerar um erro.</td>
+                </tr>
+                <tr>
+                    <td>catch</td>
+                    <td>É executado se algum erro ocorrer no <code>try</code>. Você pode acessar o erro com uma variável (e, err, error, etc).</td>
+                </tr>
+                <tr>
+                    <td>finally</td>
+                    <td>(opcional) Sempre será executado, com ou sem erro. Bom para fechar conexões, limpar recursos, etc.</td>
+                </tr>
+                <tr>
+                    <td>throw</td>
+                    <td>Permite lançar manualmente um erro.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Para que serve o fetch?</h1>
+        <p>O <code>fetch</code> no JavaScript é usado para fazer requisições HTTP (como GET, POST, PUT, DELETE, etc.) para servidores e APIs — ou seja, ele permite buscar ou enviar dados pela internet.</p>
+
+        <h2>Sintaxe básica</h2>
+        <img src="img/fetch.png" alt="">
+
+        <h2>🔸 Exemplo com método GET:</h2>
+        <img src="img/fetch-get.png" alt="">
+
+        <h2>Saída esperada:</h2>
+        <img src="img/fetch-saida.png" alt="">
+
+        <h2>🔹 Importante saber:</h2>
+        <ul>
+            <li>O <code>fetch</code> retorna uma Promise (objeto que representa a conclusão futura (ou falha) de uma operação).</li>
+            <li>Ele não lança erro automático para códigos HTTP 404 ou 500, então você precisa verificar response.ok:</li>
+        </ul>
+
+        <img src="img/fetch-response.png" alt="">
+
+        <h1>🔹 O que são async e await e como usar em JavaScript?</h1>
+        <p><code>async</code> e <code>await</code> são palavras-chave que facilitam o trabalho com Promises em JavaScript. Elas permitem escrever código assíncrono com uma sintaxe mais simples, parecida com código síncrono (linha por linha).</p>
+
+        <h2>1. async:</h2>
+        <p>Colocado antes de uma função, faz com que ela sempre retorne uma Promise.</p>
+        <img src="img/async.png" alt="">
+
+        <h2>2. await:</h2>
+        <p>Só pode ser usado dentro de funções async. Ele pausa a execução da função até a Promise ser resolvida.</p>
+        <img src="img/await.png" alt="">
     </main>
 </body>
 
