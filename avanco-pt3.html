@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Estudos avançados - parte 2</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="bi bi-journal-code"></i>Meu
+                            desenvolvimento JS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="main.html"><i
+                                        class="bi bi-filetype-js"></i>Módulo A e B</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-c_d.html"><i class="bi bi-code-slash"></i>Módulo C e
+                                    D</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="modulo-e_f.html"><i class="bi bi-code-slash"></i>Módulo E e
+                                    F</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-journal-album"></i> Estudos avançados
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <a class="dropdown-item" href="estudos-avancados.html"><i
+                                                class="bi bi-journal-album"></i>Estudos avançados</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="avanco-pt2.html"><i
+                                                class="bi bi-journal-album"></i>Estudos avançados - pt.2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="avanco-pt3.html"><i
+                                                class="bi bi-journal-album"></i>Estudos avançados - pt.3</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://github.com/DevMuriloSantos">by Dev Murilo
+                                            Santos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-body-text"></i> Exercicios JS
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-001/modelo-1.html"><i
+                                                class="bi bi-folder2"></i> Ex-001</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-002/modelo-2.html"><i
+                                                class="bi bi-folder2"></i> Ex-002</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-003/modelo-3.html"><i
+                                                class="bi bi-folder2"></i> Ex-003</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-004/modelo-4.html"><i
+                                                class="bi bi-folder2"></i> Ex-004</a></li>
+                                    <li><a class="dropdown-item" href="exercicios-js/ex-005/modelo-5.html"><i
+                                                class="bi bi-folder2"></i> Ex-005</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://github.com/DevMuriloSantos">by Dev Murilo
+                                            Santos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>REACT</h1>
+
+        <h2>O que é React</h2>
+        <p>React é uma biblioteca JavaScript (não é um framework) criada pelo Facebook (Meta) em 2011 para construir
+            interfaces de usuário (UI), principalmente aplicações web de página única (SPAs – Single Page Applications).
+        </p>
+
+        <h2>O que o React faz?</h2>
+        <ul>
+            <li>Ele ajuda você a criar componentes reutilizáveis (pequenos blocos de código que representam partes da
+                interface, como botões, formulários, cards, etc.).</li>
+            <li>Usa um conceito chamado Virtual DOM, que torna as atualizações da tela muito rápidas porque ele só
+                altera no navegador o que realmente mudou.</li>
+            <li>Permite separar sua aplicação em componentes menores e independentes, facilitando manutenção e
+                reaproveitamento.</li>
+
+            <h2>Exemplo simples de uso de React</h2>
+            <img src="img/react.png" alt="">
+            <p>➡️ Esse código define um componente chamado App. Ele retorna um trecho de JSX (JavaScript + HTML
+                misturados), que o React transforma em HTML real no navegador.</p>
+
+            <h2>Conceitos principais</h2>
+            <ol>
+                <li>Componentes → blocos reutilizáveis da interface.</li>
+                <li>JSX → sintaxe parecida com HTML dentro do JavaScript.</li>
+                <li>Props → parâmetros que um componente recebe.</li>
+                <li>State → dados internos de um componente que podem mudar ao longo do tempo.</li>
+                <li>Hooks (como useState, useEffect) → funções especiais para lidar com estado e efeitos colaterais.
+                </li>
+                <li>SPA's (Single Page Application) → são aplicações Web que tem como objetivo trazer uma experiência
+                    similar a de um APP desktop para o usuário (sem recarregar a página).</li>
+            </ol>
+        </ul>
+
+        <h2>O que é Virtual DOM?</h2>
+        <p>O Virtual DOM é uma cópia leve do DOM real, mantida em memória pelo React. Quando o estado de um componente
+            muda:</p>
+        <ol>
+            <li>O React atualiza o Virtual DOM.</li>
+            <li>Ele compara (diffing) a versão antiga e a nova do Virtual DOM.</li>
+            <li>Só aplica as diferenças necessárias no DOM real.</li>
+        </ol>
+
+        <h2><span class="corAzul">JSX</span> React</h2>
+        <p>JSX (JavaScript XML) é uma extensão de sintaxe do JavaScript usada no React.
+            Ele permite escrever código parecido com HTML dentro do JavaScript, mas que depois é transformado em código
+            JS puro.</p>
+            <p>Em outras palavras: JSX é um jeito mais fácil e legível de criar a interface (UI) no React.</p>
+
+            <h2>Regras importantes do JSX</h2>
+            <ol>
+                <li>Sempre retornar um único elemento pai
+                    (Por isso usamos <code>div</code> ou <code><> ... </></code> como fragmento).
+                </li>
+                <img src="img/react.png" alt="">
+                <li>Usar className no lugar de class
+                    <div>
+                        <p class="header">jsx</p>
+                        <p class="body">
+                            &lt;p className=<span class="corVerde">"texto"</span>&gt;<span class="corVermelho">Hello</span>&lt;/p&gt;
+                        </p>
+                    </div>
+                </li>
+                <li>Expressões JS dentro de { }
+                    <div>
+                        <p class="header">jsx</p>
+                        <p class="body">
+                            <span class="corAzul">const</span> nome = <span class="corVerde">Murilo</span>; <br>
+                            <span class="corAzul">return</span> h1Olá, {nome}! /h1 &gt;
+                        </p>
+                    </div>
+                </li>
+            </ol>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
