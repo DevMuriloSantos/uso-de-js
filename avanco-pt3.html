@@ -224,6 +224,36 @@
             </div>
 
             <p>No final, ele vai mostrar um link (geralmente http://localhost:5173) para você abrir no navegador.</p>
+
+            <h2>Estado no React</h2>
+            <p>No React, um estado (state) é um objeto que armazena informações dinâmicas de um componente, ou seja, dados que podem mudar ao longo do tempo e que, quando alterados, fazem o React re-renderizar (atualizar) o componente automaticamente na tela.</p>
+            <p>Em outras palavras: o estado é como a "memória" do componente — ele guarda valores que podem ser atualizados conforme a interação do usuário ou eventos da aplicação.</p>
+
+            <h3>Exemplo simples:</h3>
+            <img src="img/estado-react.png" alt="">
+
+            <h3>O que acontece aqui:</h3>
+            <ul>
+                <li><code>useState(0)</code> cria um estado chamado contador, que começa em 0.</li>
+                <li><code>setContador</code> é a função usada para atualizar o valor do estado.</li>
+                <li>Sempre que o botão é clicado, contador aumenta em 1 e o React re-renderiza o componente mostrando o novo valor.</li>
+            </ul>
+
+            <h2>spread operator (...)</h2>
+            <p>O spread operator (...) no JavaScript é uma sintaxe que espalha (ou expande) os elementos de um array, objeto ou iterável em outro contexto.</p>
+            <p>Ele é muito usado para copiar, mesclar ou passar valores de forma simples.</p>
+
+            <h3>Exemplo com arrays</h3>
+            <img src="img/spread-operator-array.png" alt="">
+            <p>Aqui o ...numeros “espalhou” os elementos do array original no novo array.</p>
+
+            <h3>Exemplo com objetos</h3>
+            <img src="img/spread-operator-object.png" alt="">
+            <p>Ele copia todas as propriedades de pessoa, e depois sobrescreve/ adiciona novas.</p>
+
+            <h2>Axios</h2>
+            <p>O Axios é uma biblioteca JavaScript usada para fazer requisições HTTP (GET, POST, PUT, DELETE etc.) de forma simples, tanto no navegador quanto no Node.js.</p>
+            <p>Ele é muito usado em projetos React, Vue, Angular ou mesmo no backend, para buscar ou enviar dados para APIs.</p>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
