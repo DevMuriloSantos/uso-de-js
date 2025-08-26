@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <title>Estudos avançados - parte 2</title>
+    <title>Estudos avançados - parte 3</title>
 </head>
 
 <body>
@@ -167,11 +167,63 @@
                         <p class="header">jsx</p>
                         <p class="body">
                             <span class="corAzul">const</span> nome = <span class="corVerde">Murilo</span>; <br>
-                            <span class="corAzul">return</span> h1Olá, {nome}! /h1 &gt;
+                            <span class="corAzul">return</span> &lt;h1&gt; Olá, {nome}! &lt;/h1&gt;
                         </p>
                     </div>
                 </li>
             </ol>
+
+            <h2>Criando uma aplicação em React</h2>
+
+            <h3>1. Usando o Create React App (CRA) (mais antigo, mas ainda usado)</h3>
+            <p>Esse é o jeito tradicional, mas não é o mais recomendado atualmente.</p>
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    npx create-react-app nome-do-projeto <br>
+                    <span class="corAmarelo">cd</span> nome-do-projeto <br>
+                    npm start
+                </p>
+            </div>
+
+            <p>ou, se você preferir o Yarn:</p>
+
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    yarn create react-app nome-do-projeto <br>
+                    <span class="corAmarelo">cd</span> nome-do-projeto <br>
+                    yarn start
+                </p>
+            </div>
+
+            <p>Isso vai criar uma pasta nome-do-projeto com toda a estrutura do React já pronta. Depois, é só acessar http://localhost:3000.</p>
+
+            <h3>2. Usando o Vite (mais rápido e recomendado hoje)</h3>
+            <p>O Vite é uma ferramenta moderna que inicializa e roda o projeto de forma muito mais rápida que o CRA.</p>
+
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    npm create vite@latest nome-do-projeto <br>
+                    <span class="corAmarelo">cd</span> nome-do-projeto <br>
+                    npm install <br>
+                    npm run dev
+                </p>
+            </div>
+
+            <p>Criar projeto com Yarn</p>
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    yarn create vite@latest nome-do-projeto <br>
+                    <span class="corAmarelo">cd</span> nome-do-projeto <br>
+                    yarn install <br>
+                    yarn dev
+                </p>
+            </div>
+
+            <p>No final, ele vai mostrar um link (geralmente http://localhost:5173) para você abrir no navegador.</p>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
