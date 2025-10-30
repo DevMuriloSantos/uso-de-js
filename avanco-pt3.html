@@ -254,6 +254,51 @@
             <h2>Axios</h2>
             <p>O Axios é uma biblioteca JavaScript usada para fazer requisições HTTP (GET, POST, PUT, DELETE etc.) de forma simples, tanto no navegador quanto no Node.js.</p>
             <p>Ele é muito usado em projetos React, Vue, Angular ou mesmo no backend, para buscar ou enviar dados para APIs.</p>
+
+            <h2>Caminho relativos (relative paths)</h2>
+            <h3>📁 1. ./ → Pasta atual</h3>
+            <ul>
+                <li>Significa “a partir da pasta onde estou agora”.</li>
+                <li>É usado para referenciar arquivos ou pastas dentro do mesmo diretório.</li>
+            </ul>
+
+            <h3>Exemplo:</h3>
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    ./index.html
+                </p>
+            </div>
+            <p>➡️ Significa “o arquivo index.html que está na pasta atual”.</p>
+
+            <h3>📁 2. ../ → Pasta anterior (voltar uma)</h3>
+            <ul>
+                <li>Significa “subir um nível” na hierarquia de pastas (voltar uma pasta).</li>
+            </ul>
+
+            <h3>Exemplo:</h3>
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    ../imagens/logo.png
+                </p>
+            </div>
+            <p>➡️ Significa “vá uma pasta acima e depois entre em imagens e abra logo.png”.</p>
+
+            <h3>📂 Se você está em:</h3>
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    <span class="corVerde">/projeto/</span>src<span class="corVerde">/js/</span>
+                </p>
+            </div>
+            <p>Então ../imagens/logo.png seria:</p>
+            <div>
+                <p class="header">bash</p>
+                <p class="body">
+                    <span class="corVerde">/projeto/</span>imagens<span class="corVerde">/logo.png</span>
+                </p>
+            </div>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
